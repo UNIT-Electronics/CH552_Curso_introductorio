@@ -1,28 +1,27 @@
 ---
-title: 3. Arduino y el CH552G
+title: 3. Compilador MCS51
 type: docs
 weight: 3
 BookToC: false
 ---
 
 # Configuración e instalación 
-## Ch55xduino en Windows
-Para configurar el CH552G ya existen proyectos que integran y nos facilitan la configuración del microcontrolador, la <a href="https://github.com/DeqingSun/ch55xduino/tree/ch55xduino" target="_blank">API Ch55xduino</a>  para Arduino permite hacer uso de familia MCU USB MCS51. El proyecto mencionado intenta eliminar la dificultad de configurar un entorno de compilación. El sistema mínimo solo requiere un <a href="https://github.com/UNIT-Electronics/CH552-en-Arduino/blob/main/hardware/CH552G%20Basic%20configuration.pdf" target="_blank">Chip</a> , 2 condensadores de desacoplamiento y una resistencia pull-up opcional. 
+---
+Una configuración eficiente para la tarjeta de desarrollo CH552G puede lograrse aprovechando proyectos ya existentes que simplifican el proceso. Un ejemplo destacado es la <a href="https://github.com/DeqingSun/ch55xduino/tree/ch55xduino" target="_blank">API Ch55xduino</a> diseñada para el <a href="https://www.arduino.cc/" target="_blank">Arduino IDE</a>. Esta API está específicamente diseñada para facilitar la integración y configuración del microcontrolador perteneciente a la familia USB MCS51.
 
-
-<p align="center">
-    <img src="/docs/3-Arduino_y_ch552/images/basic_mount.png" alt="basic_mount">
-</p>
-
+Esta iniciativa tiene como objetivo principal eliminar las complicaciones asociadas con la configuración de un entorno de compilación. Al utilizar la API Ch55xduino, los desarrolladores pueden agilizar el proceso de programación y aprovechar las capacidades del CH552G de manera más accesible. Esto permite a los usuarios concentrarse en el desarrollo de sus aplicaciones sin la carga de configuraciones tediosas.
 
 ### **Instalación**
 
 La integración automática al IDE es compatible a través del Arduino Boards Manager. Esta es la forma recomendada por el desarrollador.
 
-Inicie `Arduino-IDE. En Archivo->Preferencias`, pestaña Configuración, ingrese en el "Gestor de URLs Adicionales de Tarjetas" la siguiente URL:
+Inicie `Arduino-IDE. En Archivo->Preferencias`, pestaña Configuración, ingrese en el `Gestor de URLs Adicionales de Tarjetas` la siguiente URL:
 
-> https://raw.githubusercontent.com/DeqingSun/ch55xduino/ch55xduino/package_ch55xduino_mcs51_index.json
-
+---
+```sh
+https://raw.githubusercontent.com/DeqingSun/ch55xduino/ch55xduino/package_ch55xduino_mcs51_index.json
+```
+---
 <p align="center">
     <img src="/docs/3-Arduino_y_ch552/images/config.png" alt="Imagen de ch552">
 </p>
@@ -36,6 +35,10 @@ Inicie `Arduino-IDE. En Archivo->Preferencias`, pestaña Configuración, ingrese
 Haga clic en **`Instalar`**.
 
 Ahora debería encontrar una nueva entrada *CH55x Boards* en la lista en `*Herramientas->Placa:...*`.
+
+<p align="center">
+    <img src="/docs/3-Arduino_y_ch552/images/menu_ch.png" alt="Imagen de ch552">
+</p>
 
 ### Controlador USB
 

@@ -11,36 +11,17 @@ En la intersección de la innovación tecnológica y la creatividad visual, las 
 
 
 
-![](/docs/10-Comunicacion_I2C/images/chip.png)
 
-Exploraremos los pasos fundamentales para realizar esta configuración, haciendo especial hincapié en la obtención del archivo 'oled_hola_mundo', la precisa adaptación de los parámetros de datos en armonía con el entorno ch55xduino y la consecuente capacidad de presentar mensajes de manera efectiva en la pantalla. Acompáñanos en esta travesía de integración tecnológica y expresión visual."
+<p align="center">
+    <img src="/docs/10-Comunicacion_I2C/images/oled.png" alt="frecuecy">
+</p>
+
+Exploraremos los pasos fundamentales para realizar esta configuración, haciendo especial hincapié en la obtención del archivo `oled_hola_mundo`, la precisa adaptación de los parámetros de datos en armonía con el entorno ch55xduino y la consecuente capacidad de presentar mensajes de manera efectiva en la pantalla. Acompáñanos en esta travesía de integración tecnológica y expresión visual.
 
 Para configurar nuestra pantalla OLED, hacemos uso del Arduino IDE para cargar los archivos. Por lo que para poder iniciar con nuestro despliesgue se necesita:
 
- 
-
-Descargar el archivo oled_hola_mundo.
-
- 
-
-Dentro de la carpeta encontrarás un archivo que lleva por nombre "oled_hola_mundo.ino" abre el archivo con Arduino IDE.
-
- 
-
-Para poder cargar el archivo configura el entorno con las siguiente especificaciones:
-
-```c
-Reloj: 16 Mhz.
-
-Método de carga: USB.
-
-Ajuste de carga a:  "USER CODE /w 2866 USB RAM"
-```
-Para completar la carga del código, presiona el botón de boot mientras se conecta vía USB.
 
 
-La configuración de la conexión, se encuentra asignada en el archivo de la ruta scr/config.h
-![](/docs/10-Comunicacion_I2C/images/buttons.png)
 
 ```c#
 // Pin definitions
@@ -99,6 +80,22 @@ El PIN BUZZER o de LED nos permite saber que la transmisión de los datos se eje
 //                                       | +---------+   |
 //                                       +---------------+
 ```
+Para poder cargar el archivo configura el entorno con las siguiente especificaciones:
+
+```c
+Reloj: 16 Mhz.
+
+Método de carga: USB.
+
+Ajuste de carga a:  "USER CODE /w 2866 USB RAM"
+```
+Para completar la carga del código, presiona el botón de boot mientras se conecta vía USB.
+
+
+La configuración de la conexión, se encuentra asignada en el archivo de la ruta scr/config.h
+![](/docs/10-Comunicacion_I2C/images/buttons.png)
+
+
 ![](/docs/10-Comunicacion_I2C/images/oled2.png)
 
 

@@ -11,9 +11,14 @@ BookToC: false
 El código se centra en la lectura de una entrada analógica utilizando el convertidor analógico a digital (ADC) del CH552.
 
 El pin `P1.1` se configura como entrada analógica, y se utiliza la función analogRead() para obtener un valor digital proporcional al voltaje presente en ese pin.
+
 ![](/docs/8-Entradas_analogicas/images/adc.png)
 
-. Ejercicios para Leer y Procesar Señales Analógicas Utilizando el ADC del CH552:
+Ejercicios para Leer y Procesar Señales Analógicas Utilizando el ADC del CH552:
+
+<p align="center">
+    <img src="/docs/8-Entradas_analogicas/images/pot_ch552.png" alt="frecuecy">
+</p>
 
 Se lee el valor analógico del pin P1.1 utilizando analogRead().
 
@@ -55,7 +60,6 @@ void loop() {
   delay(10);
 }
 ```
-
 
 ![](/docs/8-Entradas_analogicas/images/adc.gif)
 Este código permite entender cómo funciona la entrada analógica en el CH552, desde la lectura de valores analógicos hasta la conversión de esos valores en unidades de voltaje, lo que es fundamental al trabajar con sensores que proporcionan señales analógicas.

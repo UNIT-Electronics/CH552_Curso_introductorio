@@ -1,7 +1,7 @@
 ---
-title: 12. Configuración del PWM
+title: 9. Configuración del PWM
 type: docs
-weight: 10
+weight: 9
 BookToC: false
 ---
 
@@ -90,7 +90,8 @@ void main(void) {
 ```
 
 Descargar el código fuente para CH552 [AQUÍ](/).
-![](/docs/12-Controlador_pwm/images/pwm.gif)
+
+![](/docs/9-Controlador_pwm/images/pwm.gif)
 
 ## Continua con el curso [AQUI](/)
 ---

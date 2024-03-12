@@ -1,7 +1,7 @@
 ---
 title: 11. Comunicación con neopixels
 type: docs
-weight: 10
+weight: 11
 BookToC: false
 ---
 
@@ -43,7 +43,9 @@ Descargar el archivo Neopixel_lite.
 
 Dentro de la carpeta encontrarás un archivo que lleva por nombre "neopixel_lite.ino" abre el archivo con Arduino IDE.
 
- 
+  <p align="center">
+    <img src="/docs/11-Comunicacion_neopixels/images/neopixel.png" alt="neopixel">
+</p>
 
 Para poder cargar el archivo, configura el entorno con las siguientes especificaciones:
 

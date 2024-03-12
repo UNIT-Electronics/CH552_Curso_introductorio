@@ -20,7 +20,7 @@ Se establecen las definiciones de pines, indicando qué pines del CH552 se utili
 ```
 
 <p align="center">
-    <img src="/docs/4-Salidas_digitales/images/a764d1bb-b3cf-442c-a767-f7a168104e75.png" alt="LED">
+    <img src="/docs/4-Salidas_digitales/images/ouput_led.png" alt="salida led">
 </p>
 
 <div style="text-align: right;">
@@ -49,12 +49,6 @@ void loop() {
                      // wait for a second
 }
 ```
-<p align="center">
-    <img src="/docs/4-Salidas_digitales/images/frecuency.png" alt="frecuency">
-</p>
-
-
-![](/docs/4-Salidas_digitales/images/osci.png)
 
 Para poder cargar el archivo, configura el entorno con las siguientes especificaciones:
 
@@ -69,6 +63,7 @@ Ajuste de carga a:  "Default CDC".
     <img src="/docs/4-Salidas_digitales/images/config.png" alt="LED">
 </p>
 
+
 **Función setup():** 
 
 En la función setup(), se inicializan los pines de salida digital.
@@ -78,6 +73,7 @@ void setup() {
 }
 ```
 **Función loop():** 
+
 La función loop() contiene el código principal que se ejecuta continuamente.
 
 Se enciende y apaga el LED conectado al pin de salida digital en un ciclo.
@@ -116,7 +112,6 @@ void loop() {
   delay(1000);
 }
 ```
-**Observaciones Adicionales:** 
 
 - Este código proporciona una introducción básica al manejo de salidas digitales en el CH552 con Arduino.
 
@@ -124,12 +119,24 @@ void loop() {
 
 Este código simple puede servir como punto de partida para explorar y entender el control de salidas digitales en el CH552 mediante Arduino.
 
-
-
-
 <p align="center">
     <img src="/docs/4-Salidas_digitales/images/blink.gif" alt="LED">
 </p>
+
+## Visualización con Osciloscopio
+<p align="center">
+    <img src="/docs/4-Salidas_digitales/images/a764d1bb-b3cf-442c-a767-f7a168104e75.png" alt="LED">
+</p>
+
+<p align="center">
+    <img src="/docs/4-Salidas_digitales/images/frecuency.png" alt="frecuency">
+</p>
+
+
+![](/docs/4-Salidas_digitales/images/osci.png)
+
+
+
 # Continua con el curso [](/) 
 
 

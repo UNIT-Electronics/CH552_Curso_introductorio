@@ -20,8 +20,9 @@ Descripción del Código para mejorar la conmutación de mayor velocidad.
 Este código para el CH552 se enfoca en la implementación de conmutación rápida de un LED en el pin P3.3.
 
 
+
 <p align="center">
-    <img src="/docs/5-Salidas_conmutacion_rapida/images/led.png" alt="LED">
+    <img src="/docs/4-Salidas_digitales/images/ouput_led.png" alt="frecuecy">
 </p>
 
 
@@ -72,8 +73,8 @@ Este código es un ejemplo básico de cómo lograr una conmutación rápida en u
 
 
 ```cpp
-#define LED_BUILTIN_PORT 1
-#define LED_BUILTIN_PIN 1
+#define LED_BUILTIN_PORT 3
+#define LED_BUILTIN_PIN 3
 
 // La función de configuración se ejecuta una vez al presionar el botón de reinicio o encender la placa
 void setup() {
@@ -89,7 +90,14 @@ void loop() {
 //   delay(1000);                       // esperar un segundo
 }
 
+
 ```
+
+## Visualización con Osciloscopio
+
+<p align="center">
+    <img src="/docs/5-Salidas_conmutacion_rapida/images/led.png" alt="LED">
+</p>
 
 <p align="center">
     <img src="/docs/5-Salidas_conmutacion_rapida/images/spped_frequency.png" alt="frecuecy">

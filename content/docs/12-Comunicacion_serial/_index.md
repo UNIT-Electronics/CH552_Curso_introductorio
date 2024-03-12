@@ -1,7 +1,7 @@
 ---
-title: 9. Comunicación serial
+title: 12. Comunicación serial
 type: docs
-weight: 9
+weight: 12
 BookToC: false
 ---
 
@@ -27,12 +27,15 @@ El microcontrolador CH552 ofrece una amplia gama de capacidades y aplicaciones, 
 //                                          +------+
 ```
 
-n esta sección se detalla la configuración paso a paso para establecer la conexión USB a TTL con el CH552
+En esta sección se detalla la configuración paso a paso para establecer la conexión USB a TTL con el CH552
 
 Para ello se hace uso del código ejemplo proporcionado por la API desarrollada por ch55xduino.
 
 Para una mejor compresión referente a la instalación te recomendamos ver nuestra, guía de instalación [Aquí](GitHub - UNIT-Electronics/CH552-en-Arduino)
 
+<p align="center">
+    <img src="/docs/9-Comunicacion_serial/images/conexion.png" alt="conexion_Serial1">
+</p>
 
 Verificación de código
 Abre el ejemplo USBSerilalAdaptor.ino desde Archivo->Ejemplos->04. Comunicación -> USBSerilalAdaptor
@@ -108,6 +111,10 @@ Por ello se propone el uso de dos interfaces de comunicación para la verificaci
 \\         /  ************ \                           /  ************  \
 ```
 
+<p align="center">
+    <img src="/docs/9-Comunicacion_serial/images/conexion2.png" alt="frecuecy">
+</p>
+
 Prueba de funcionamiento
 
 ![](/docs/9-Comunicacion_serial/images/test_code.png)
@@ -130,12 +137,15 @@ El convertidor USB a TTL CH552, permite elaborar rutinas internas como secuencia
  
 
 El código de ch552-USB-TTLpermite establecer las rutinas personalizadas realizando las adecuaciones necesarias al código ejemplo dado por el desarrollador.
+<div style="text-align: right;">
+    <a href="/docs/9-Comunicacion_serial/code/UsbSerialAdaptor2.ino" download="UsbSerialAdaptor2.ino">
+        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+            Download 
+        </button>
+    </a>
+</div>
 
 ![](/docs/9-Comunicacion_serial/images/test_code2.png)
-
-
-
-
 
 > **Nota:** Ten en cuenta que este código es un ejemplo y puede que necesites ajustarlo según tu configuración específica y tus necesidades.
 

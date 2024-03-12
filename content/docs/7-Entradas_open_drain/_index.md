@@ -22,12 +22,19 @@ En el código, se configura el pin `P1.1` como entrada con la opción **INPUT_PU
 
 Se implementa un ejemplo práctico utilizando un interruptor momentáneo conectado desde el pin `P1.1` a tierra.
 
-![](/docs/7-Entradas_open_drain/images/squema_push_led.png)
+
+<p align="center">
+    <img src="/docs/7-Entradas_open_drain/images/squema_push_led.png" alt="frecuecy">
+</p>
+
 
 Cuando el interruptor está abierto, el valor de sensorVal será **HIGH**, indicando que el interruptor no está presionado. Cuando está cerrado, el valor será **LOW**, indicando que el interruptor está presionado.
 
-c. Uso de Resistencias de Pull-up y Pull-down en Conjunto con Salidas de Drenaje Abierto:
+## Uso de Resistencias de Pull-up y Pull-down en Conjunto con Salidas de Drenaje Abierto:
 
+<p align="center">
+    <img src="/docs/7-Entradas_open_drain/images/fz_ch552.png" alt="frecuecy">
+</p>
 Se utiliza el pin P3.3 como salida para un LED.
 
 Dado que la configuración de drenaje abierto puede invertir la lógica, el LED se enciende (HIGH) cuando el interruptor está presionado (cerrado) y se apaga (LOW) cuando está abierto.
@@ -81,7 +88,7 @@ Este código ilustra el uso de salidas digitales con configuración de drenaje a
     <img src="/docs/6-Entradas_digitales/images/in.png" alt="frecuecy">
 </p>
 
-\
+
 <p align="center">
     <img src="/docs/7-Entradas_open_drain/images/input4.gif" alt="frecuecy">
 </p>

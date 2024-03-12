@@ -11,13 +11,18 @@ BookToC: false
 
 Este código permite interactuar con una entrada digital, en este caso, un botón conectado al pin `P1.1`. La lectura de este pin se realiza para determinar si el botón está presionado o no.
 
-![](/docs/6-Entradas_digitales/images/squema_push_led.png)
 
+<p align="center">
+    <img src="/docs/6-Entradas_digitales/images/input_res.png" alt="frecuecy">
+</p>
 
 
 ### Ejercicios para Leer y Procesar Señales Digitales de Diferentes Fuentes:
 
 Se utiliza un botón físico conectado al pin `P1.1` y un LED conectado al pin `P3.3` para representar la salida de la acción del botón. 
+
+![](/docs/6-Entradas_digitales/images/squema_push_led.png)
+
 
 La lógica del código implica que, cuando el botón está presionado (pin `P1.1` leído como LOW), se enciende el LED (HIGH), y cuando el botón está suelto, se apaga el LED (LOW).
 
