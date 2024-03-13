@@ -18,7 +18,7 @@ El CH552, caracterizado por su tamaño compacto, conectividad USB nativa, y una 
 <div style="text-align: right;">
     <a href="/docs/2-Microcontrolador_ch552/images/ch552_pinout.jpg" download="PinOut_CH552.jpg">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            Download PinOut
+            Descargar PinOut
         </button>
     </a>
 </div>
@@ -60,5 +60,8 @@ La tarjeta cuenta con dos LEDs directamente vinculados al microcontrolador. El p
 
 <!-- # Continua con el curso [](/) -->
 
+<div style="text-align: right">
+    <h1><a href="/docs/3-compilador_mcs51/">Siguiente</a></h>
+</div>
 
 ⌨️ con ❤️ por [UNIT-Electronics](https://github.com/UNIT-Electronics) 😊

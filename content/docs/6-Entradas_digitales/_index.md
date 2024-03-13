@@ -7,32 +7,25 @@ BookToC: false
 
 # Entradas digitales
 
-### Introducción a la Lectura de Pines de Entrada Digital:
-
+---
 Este código permite interactuar con una entrada digital, en este caso, un botón conectado al pin `P1.1`. La lectura de este pin se realiza para determinar si el botón está presionado o no.
-
-
-<p align="center">
-    <img src="/docs/6-Entradas_digitales/images/input_res.png" alt="frecuecy">
-</p>
-
-
-### Ejercicios para Leer y Procesar Señales Digitales de Diferentes Fuentes:
 
 Se utiliza un botón físico conectado al pin `P1.1` y un LED conectado al pin `P3.3` para representar la salida de la acción del botón. 
 
-![](/docs/6-Entradas_digitales/images/squema_push_led.png)
+<p align="center">
+    <img src="/docs/6-Entradas_digitales/images/input_res.png" alt="esquema">
+</p>
 
 
 La lógica del código implica que, cuando el botón está presionado (pin `P1.1` leído como LOW), se enciende el LED (HIGH), y cuando el botón está suelto, se apaga el LED (LOW).
 
-### Aplicación de Lógica Condicional para el Manejo de Entradas Digitales:
-
+## Código
+---
 Se utiliza una estructura de control if-else para evaluar el estado del botón y tomar decisiones en consecuencia.
 <div style="text-align: right;">
     <a href="/docs/6-Entradas_digitales/code/input_digital.ino" download="input_digital.ino">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            Download 
+            Descarga input_digital.ino 
         </button>
     </a>
 </div>
@@ -62,24 +55,33 @@ void loop() {
 ```
 Este código sirve como una introducción práctica a la lectura de entradas digitales y la aplicación de lógica condicional en el entorno CH552 y Arduino. La relación entre la entrada del botón y la salida del LED demuestra la capacidad de interactuar con el entorno físico mediante la programación.
 
+**Mensajes en el Monitor Serial**
 
-<p align="center">
-    <img src="/docs/6-Entradas_digitales/images/com.png" alt="frecuecy">
-</p>
+Para visualizar información en el Monitor Serial, sigue estos pasos:
 
+1. Dirígete a `Herramientas -> Puerto`, como se muestra en la siguiente imagen:
 
-<p align="center">
-    <img src="/docs/6-Entradas_digitales/images/in.png" alt="frecuecy">
-</p>
+    <p align="center">
+        <img src="/docs/6-Entradas_digitales/images/com.png" alt="comserial">
+    </p>
 
+2. Se abrirá una interfaz donde podrás observar el estado del LED, dependiendo de si se ha presionado o no. En la siguiente imagen, se muestra un ejemplo de cómo se visualiza:
 
+    <p align="center">
+        <img src="/docs/6-Entradas_digitales/images/in.png" alt="frecuecy">
+    </p>
+
+Esta interfaz en el Monitor Serial te proporciona información detallada sobre el estado del LED, permitiéndote monitorear fácilmente las interacciones y eventos asociados al botón. Utiliza esta herramienta para depurar y entender mejor el comportamiento de tu sistema en tiempo real.
+
+## Resultados
+---
 <p align="center">
     <img src="/docs/6-Entradas_digitales/images/input.gif" alt="frecuecy">
 </p>
 
-# Continua con el curso [](/)
-
-
+<div style="text-align: right">
+    <h1><a href="/docs/7-entradas_open_drain/">Siguiente</a></h>
+</div>
 
 
 

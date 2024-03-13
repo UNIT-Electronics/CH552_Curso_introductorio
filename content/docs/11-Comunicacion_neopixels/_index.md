@@ -164,5 +164,10 @@ Para completar la carga del código, presiona el botón de boot mientras se cone
 </div>
 
 
+<div style="text-align: right">
+    <h1><a href="/docs/12-comunicacion_serial/">Siguiente</a></h>
+</div>
+
+
 ⌨️ con ❤️ por [UNIT-Electronics](https://github.com/UNIT-Electronics) 😊
  

@@ -5,9 +5,8 @@ weight: 9
 BookToC: false
 ---
 
-# Configuración del PWM con CH552
-
-El CH552 es un microcontrolador USB que ofrece versatilidad en las Entradas/Salidas, incluida la capacidad de generar señales PWM. En este ejemplo, te guiaré a través de la configuración del CH552 para generar señales PWM con una frecuencia y ciclo de trabajo específicos.
+# Configuración del PWM 
+El CH552 es un microcontrolador USB que ofrece versatilidad en las Entradas/Salidas, incluida la capacidad de generar señales PWM. En este ejemplo, se te guiará a través de la configuración del CH552 para generar señales PWM con una frecuencia y ciclo de trabajo específicos.
 
 ## Conceptos Básicos del PWM
 
@@ -15,31 +14,113 @@ La Modulación de Ancho de Pulso (PWM) es una técnica utilizada para controlar 
 
 ## Ejemplo de Código PWM
 
-Para probar el ejemplo, se recomienda el uso del Arduino IDE para cargar los archivos. Sigue estos pasos:
+Para probar el ejemplo, es necesario seguir los siguientes estos pasos:
 
-1. Descargar el archivo PWM.
-2. Abre el archivo "pwm.ino" con Arduino IDE.
+1. Descargar el archivo:
+
+<div style="text-align: center;">
+    <a href="/docs/9-Controlador_pwm/codes/CH552-PWM.zip" download="CH552-PWM.zip">
+        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+            CH552-PWM.zip
+        </button>
+    </a>
+</div>
+
+2. Abre el archivo `CH552-PWM.ino` con Arduino IDE.
 3. Configura el entorno con las siguientes especificaciones:
+```c
    - Reloj: 16 MHz.
    - Método de carga: USB.
    - Ajuste de carga a: "USER CODE /w 2866 USB RAM".
+
+```
+
 4. Completa la carga del código presionando el botón de boot mientras se conecta vía USB.
 
-A continuación, se muestra un ejemplo de código que configura el CH552 para generar señales PWM:
+A continuación, se decribe el funcionamiento del codigo para generar señales PWM:
+
+El IDE abre dos archivos, el primero es un interfaz de compilación:
+```c
+#ifndef USER_USB_RAM
+#error "This firmware needs to be compiled with a USER USB setting"
+#endif
+
+unsigned char _sdcc_external_startup (void) __nonbanked {
+  return 0;
+}
+
+```
+El segundo abre el código que permite hacer la función deseada:
 
 ```c
-#include <Serial.h>
+/** @file CH552-PWM.c (SOURCE)
+ *
+ *  @brief CH552 PWM example
+ *
+ *  @author @CesarBautista 
+ *
+ *  @bug No known bugs.
+ */
 
-void setup() {
-  // No es necesario inicializar USBSerial
-  pinMode(11, OUTPUT);
+/******************************************************************************
+ * INCLUDES
+ *****************************************************************************/
+
+#include <stdio.h>
+#include "src/config.h"                   // user configurations
+#include "src/system.h"                   // system functions
+#include "src/gpio.h"                     // for GPIO
+#include "src/delay.h"                    // for delays
+#include "src/pwm.h"
+
+/******************************************************************************
+ * MACROS AND DEFINES
+ *****************************************************************************/
+
+#define MIN_COUNTER 10
+#define MAX_COUNTER 254
+#define STEP_SIZE   10
+
+/******************************************************************************
+ * TYPEDEFS
+ *****************************************************************************/
+
+/******************************************************************************
+ * PUBLIC FUNCTION PROTOTYPES
+ *****************************************************************************/
+
+void change_pwm(int hex_value)
+{
+    PWM_write(PIN_PWM, hex_value);
 }
+void main(void) 
+{
+    PWM_set_freq(1000);                    
+    PIN_output(PIN_PWM);       
+    PWM_start(PIN_PWM);      
+    PWM_write(PIN_PWM, 0);
+    CLK_config();                          
+    DLY_ms(5);                            
 
-void loop() {
-  // Generar una señal PWM en el pin 11, P1.1:
-  analogWrite(11, 127); // 50% de ciclo de trabajo
+while (1) 
+{
+    for (int i = MIN_COUNTER; i < MAX_COUNTER; i+=STEP_SIZE) 
+    {
+        change_pwm(i);
+        DLY_ms(10);
+    }
+    for (int i = MAX_COUNTER; i > MIN_COUNTER; i-=STEP_SIZE)
+    {
+        change_pwm(i);
+        DLY_ms(10);
+    }
+    
+}
 }
 ```
+Dado que arduino solo es nuestro compilador el codigo que se te presenta cambia su estructura, por lo que debes abrir el proyecto completo con tu editor de codigo favorito:
+
+Se te recomienda el uso de <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
 
 
 
@@ -93,15 +174,10 @@ Descargar el código fuente para CH552 [AQUÍ](/).
 
 ![](/docs/9-Controlador_pwm/images/pwm.gif)
 
-## Continua con el curso [AQUI](/)
----
+<div style="text-align: right">
+    <h1><a href="/docs/10-comunicacion_i2c/">Siguiente</a></h>
+</div>
 
-
-Descargar el código [AQUÍ](/).
-
-## Continuación del Curso
-
-Puedes continuar con el curso [AQUÍ](/).
 
 
 ⌨️ con ❤️ por [UNIT-Electronics](https://github.com/UNIT-Electronics) 😊

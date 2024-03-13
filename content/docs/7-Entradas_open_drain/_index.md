@@ -6,9 +6,7 @@ BookToC: false
 ---
 
 # Entradas con drenaje abierto 
-Descripción del Código para Salidas Digitales con Configuración de Drenaje Abierto (OPEN DRAIN):
-
-
+---
 La configuración de drenaje abierto es una técnica en la que la salida digital no está conectada directamente a Vcc o tierra, sino a través de un transistor que se activa para conducir a tierra. 
 
 En el código, se configura el pin `P1.1` como entrada con la opción **INPUT_PULLUP**, lo que activa internamente una resistencia pull-up de 70K-ohm conectada a 5V. Esto significa que el pin se lee como **HIGH** cuando está abierto y **LOW** cuando está cerrado.
@@ -35,13 +33,25 @@ Cuando el interruptor está abierto, el valor de sensorVal será **HIGH**, indic
 <p align="center">
     <img src="/docs/7-Entradas_open_drain/images/fz_ch552.png" alt="frecuecy">
 </p>
-Se utiliza el pin P3.3 como salida para un LED.
 
-Dado que la configuración de drenaje abierto puede invertir la lógica, el LED se enciende (HIGH) cuando el interruptor está presionado (cerrado) y se apaga (LOW) cuando está abierto.
+Se utiliza el pin `P3.3` como salida para un LED.
+
+
+
+<div style="width: 100%; max-width: 800px; border: 1px solid #000; padding: 20px; margin: 10px auto; background-color: lightblue; border-radius: 15px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); text-align: left;">
+    <div style="font-weight: bold; font-size: 20px; color: #333; margin-bottom: 20px;">Nota</div>
+    <div style="font-size: 16px; line-height: 1.5; color: #333;">
+       Dado que la configuración de drenaje abierto puede invertir la lógica, el LED se enciende (HIGH) cuando el interruptor está presionado (cerrado) y se apaga (LOW) cuando está abierto.
+    </div>
+</div>
+
+## Código
+---
+
 <div style="text-align: right;">
     <a href="/docs/7-Entradas_open_drain/code/open_drain.ino" download="open_drain.ino">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            Download 
+            Descarga Open_drain.ino
         </button>
     </a>
 </div>
@@ -79,14 +89,23 @@ Este código ilustra el uso de salidas digitales con configuración de drenaje a
 
 
 
-<p align="center">
-    <img src="/docs/6-Entradas_digitales/images/com.png" alt="frecuecy">
-</p>
+**Mensajes en el Monitor Serial**
 
+Para visualizar información en el Monitor Serial, sigue estos pasos:
 
-<p align="center">
-    <img src="/docs/6-Entradas_digitales/images/in.png" alt="frecuecy">
-</p>
+1. Dirígete a `Herramientas -> Puerto`, como se muestra en la siguiente imagen:
+
+    <p align="center">
+        <img src="/docs/6-Entradas_digitales/images/com.png" alt="comserial">
+    </p>
+
+2. Se abrirá una interfaz donde podrás observar el estado del LED, dependiendo de si se ha presionado o no. En la siguiente imagen, se muestra un ejemplo de cómo se visualiza:
+
+    <p align="center">
+        <img src="/docs/6-Entradas_digitales/images/in.png" alt="frecuecy">
+    </p>
+
+Esta interfaz en el Monitor Serial te proporciona información detallada sobre el estado del LED, permitiéndote monitorear fácilmente las interacciones y eventos asociados al botón. Utiliza esta herramienta para depurar y entender mejor el comportamiento de tu sistema en tiempo real.
 
 
 <p align="center">
@@ -94,11 +113,10 @@ Este código ilustra el uso de salidas digitales con configuración de drenaje a
 </p>
 
 
+<div style="text-align: right">
+    <h1><a href="/docs/8-entradas_analogicas/">Siguiente</a></h>
+</div>
 
-# Continua con el curso [](/)
-
-
-#### Referencias
 
 ---
 ⌨️ con ❤️ por [UNIT-Electronics](https://github.com/UNIT-Electronics) 😊

@@ -6,27 +6,23 @@ BookToC: false
 ---
 
 # Salidas Digitales
+---
+El desarrollo de este ejemplo se enfoca en el control de pines de salida digital para encender y apagar LEDs, así como la implementación de secuencias lógicas sencillas.
 
-A continuación se presenta una descripción para el código que maneja las salidas digitales del CH552 utilizando la plataforma Arduino. Este código se enfoca en el control de pines de salida digital para encender y apagar LEDs, así como la implementación de secuencias lógicas sencillas.
 
-### Configuración Inicial:
-
-Se incluyen las bibliotecas necesarias para la comunicación con el CH552 en el entorno Arduino.
-
-Se establecen las definiciones de pines, indicando qué pines del CH552 se utilizarán como salidas digitales.
-
-```c#
-#define LED_PIN 33   // Ejemplo: Pin 1 como salida digital
-```
-
+## Esquema de conexión
+---
 <p align="center">
     <img src="/docs/4-Salidas_digitales/images/ouput_led.png" alt="salida led">
 </p>
 
+## Código
+---
+
 <div style="text-align: right;">
     <a href="/docs/4-Salidas_digitales/code/blink.ino" download="blink.ino">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            Download 
+            Descarga BLINK.ino
         </button>
     </a>
 </div>
@@ -49,7 +45,8 @@ void loop() {
                      // wait for a second
 }
 ```
-
+## Compilar y correr un programa
+---
 Para poder cargar el archivo, configura el entorno con las siguientes especificaciones:
 
 ```C
@@ -59,11 +56,19 @@ Método de carga: USB.
 
 Ajuste de carga a:  "Default CDC".
 ```
+
+
 <p align="center">
     <img src="/docs/4-Salidas_digitales/images/config.png" alt="LED">
 </p>
 
 
+Carga un programa ingresando al modo de <strong>BOOT</strong> (cargador de arranque). Desconecte el cable USB, presione el botón <strong>BOOT</strong> en la tarjeta de desarrollo y luego vuelve a conectar a la PC.
+
+<img src="/docs/3-Compilador_mcs51/images/pc_ch.png" alt="Imagen de ch552">
+
+## Estructura del programa
+---
 **Función setup():** 
 
 En la función setup(), se inicializan los pines de salida digital.
@@ -113,32 +118,36 @@ void loop() {
 }
 ```
 
-- Este código proporciona una introducción básica al manejo de salidas digitales en el CH552 con Arduino.
 
-- Ajusta los valores de delay y las secuencias según sea necesario para cumplir con los requisitos específicos.
 
 Este código simple puede servir como punto de partida para explorar y entender el control de salidas digitales en el CH552 mediante Arduino.
 
+## Resultados
 <p align="center">
     <img src="/docs/4-Salidas_digitales/images/blink.gif" alt="LED">
 </p>
 
-## Visualización con Osciloscopio
+**Visualización con Osciloscopio**
+
+En el proceso de exploración y análisis de las salidas digitales, se emplea un osciloscopio para obtener una representación visual precisa. El diagrama siguiente ilustra la conexión de la salida del `pin 3.3` al osciloscopio.
+
 <p align="center">
     <img src="/docs/4-Salidas_digitales/images/a764d1bb-b3cf-442c-a767-f7a168104e75.png" alt="LED">
 </p>
+
+Este diagrama captura la frecuencia base, configurada en el código, alcanzando aproximadamente 70 kHz. La representación gráfica revela el intercambio constante entre cambios de instrucciones, proporcionando una visión clara de la dinámica de la señal.
 
 <p align="center">
     <img src="/docs/4-Salidas_digitales/images/frecuency.png" alt="frecuency">
 </p>
 
+La última imagen destaca el papel fundamental del osciloscopio como herramienta central para la observación y medición precisa de las señales digitales. Su capacidad para ofrecer una representación visual detallada contribuye de manera significativa a un análisis minucioso y eficaz de las salidas digitales en el entorno de desarrollo.
 
-![](/docs/4-Salidas_digitales/images/osci.png)
+![Osciloscopio](/docs/4-Salidas_digitales/images/osci.png)
 
-
-
-# Continua con el curso [](/) 
-
+<div style="text-align: right">
+    <h1><a href="/docs/5-salidas_conmutacion_rapida/">Siguiente</a></h>
+</div>
 
 
 

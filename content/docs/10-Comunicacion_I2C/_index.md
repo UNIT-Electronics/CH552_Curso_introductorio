@@ -99,7 +99,10 @@ La configuración de la conexión, se encuentra asignada en el archivo de la rut
 ![](/docs/10-Comunicacion_I2C/images/oled2.png)
 
 
-# Continua con el curso []()
+<div style="text-align: right">
+    <h1><a href="/docs/11-comunicacion_neopixels/">Siguiente</a></h>
+</div>
+
 
 
 ---
