@@ -5,7 +5,6 @@ weight: 12
 BookToC: false
 ---
 # Comunicación serial
-## CH552: Conversor USB a TTL
 
 El microcontrolador CH552 ofrece una amplia gama de capacidades y aplicaciones, y una de sus características destacadas es la capacidad de comunicación USB. Esto te permite crear dispositivos que pueden ser controlados y monitoreados desde tu computadora, lo que es esencial en proyectos de desarrollo, prototipado y automatización.
 
@@ -69,7 +68,7 @@ Por ello se propone el uso de dos interfaces de comunicación para la verificaci
 
 ![](/docs/9-Comunicacion_serial/images/py_code.png)
 
-```ino
+```
    \\  ─────────▄▲▲▲────────
    \\  ─────▄█▀▌██████▄──────
    \\  ────▐███▌███████▐▄────
@@ -90,13 +89,10 @@ Por ello se propone el uso de dos interfaces de comunicación para la verificaci
 \\         /  ************ \                           /  ************  \
 ```
 
-<p align="center">
-    <img src="/docs/9-Comunicacion_serial/images/conexion2.png" alt="frecuecy">
-</p>
 
 Prueba de funcionamiento
 
-![](/docs/9-Comunicacion_serial/images/test_code.png)
+![](/docs/12-Comunicacion_serial/images/test_code.png)
 
 Si bien no solo se puede usar como un convertidor USB a TTL, sino también puede introducir ciertas secciones de código para realizar ciertas funciones independientes.
 
@@ -117,14 +113,14 @@ El convertidor USB a TTL CH552, permite elaborar rutinas internas como secuencia
 
 El código de ch552-USB-TTLpermite establecer las rutinas personalizadas realizando las adecuaciones necesarias al código ejemplo dado por el desarrollador.
 <div style="text-align: right;">
-    <a href="/docs/9-Comunicacion_serial/code/UsbSerialAdaptor2.ino" download="UsbSerialAdaptor2.ino">
+    <a href="/docs/12-Comunicacion_serial/code/UsbSerialAdaptor2.ino" download="UsbSerialAdaptor2.ino">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
             Download 
         </button>
     </a>
 </div>
 
-![](/docs/9-Comunicacion_serial/images/test_code2.png)
+![](/docs/12-Comunicacion_serial/images/test_code2.png)
 
 > **Nota:** Ten en cuenta que este código es un ejemplo y puede que necesites ajustarlo según tu configuración específica y tus necesidades.
 
