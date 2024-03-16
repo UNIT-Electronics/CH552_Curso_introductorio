@@ -23,7 +23,7 @@ Exploraremos los pasos fundamentales para realizar esta configuración, haciendo
 ---
 Para probar el ejemplo, es necesario seguir los siguientes pasos:
 
-1. Descargar el archivo:
+- Descarga el archivo:
 
 <div style="text-align: center;">
     <a href="/docs/9-Controlador_pwm/code/oled_hola_mundo.zip" download="oled_hola_mundo.zip">
@@ -33,8 +33,9 @@ Para probar el ejemplo, es necesario seguir los siguientes pasos:
     </a>
 </div>
 
-2. Abre el archivo `oled_hola_mundo.ino` con Arduino IDE.
-3. Configura el entorno con las siguientes especificaciones:
+- Dentro de la carpeta **oled_hola_mundo** existe un archivo que lleva por nombre `oled_hola_mundo.ino` abre el archivo con Arduino IDE.
+
+- Configura el entorno con las siguientes especificaciones:
 ```c
    - Reloj: 16 MHz.
    - Método de carga: USB.

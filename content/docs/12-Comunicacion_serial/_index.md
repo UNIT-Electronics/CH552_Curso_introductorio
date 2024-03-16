@@ -4,46 +4,26 @@ type: docs
 weight: 12
 BookToC: false
 ---
-
 # Comunicación serial
 ## CH552: Conversor USB a TTL
 
 El microcontrolador CH552 ofrece una amplia gama de capacidades y aplicaciones, y una de sus características destacadas es la capacidad de comunicación USB. Esto te permite crear dispositivos que pueden ser controlados y monitoreados desde tu computadora, lo que es esencial en proyectos de desarrollo, prototipado y automatización.
 
+**En esta sección se detalla la configuración paso a paso para establecer la conexión USB a TTL con el CH552**
 
-
-```c
-// Conexión CH552 Serial TX RX:
-// -------                                 CH552
-//                                          +--\/--+
-//                   ---------------- P32  1|°     |16  V33 -------------
-//                   ---------------- P14  2|      |15  Vcc -------------
-//                   ---------------- P15  3|      |14  GND -------------
-//                   ---------------- P16  4|      |13  P37 UDM --- USB D-
-//                   ---------------- P17  5|      |12  P36 UDP --- USB D+
-//                   ---------------- RST  6|      |11  P34 -------------
-//                     TX ----------- P31  7|      |10  P33 -------------
-//                     RX ----------- P30  8|      |9   P11 -------------
-//                                          +------+
-```
-
-En esta sección se detalla la configuración paso a paso para establecer la conexión USB a TTL con el CH552
-
-Para ello se hace uso del código ejemplo proporcionado por la API desarrollada por ch55xduino.
-
-Para una mejor compresión referente a la instalación te recomendamos ver nuestra, guía de instalación [Aquí](GitHub - UNIT-Electronics/CH552-en-Arduino)
 
 <p align="center">
-    <img src="/docs/9-Comunicacion_serial/images/conexion.png" alt="conexion_Serial1">
+    <img src="/docs/12-Comunicacion_serial/images/conexion2.png" alt="conexion_Serial1">
 </p>
 
-Verificación de código
-Abre el ejemplo USBSerilalAdaptor.ino desde Archivo->Ejemplos->04. Comunicación -> USBSerilalAdaptor
+### Verificación de código
+
+Abre el ejemplo **USBSerilalAdaptor.ino** desde `Archivo->Ejemplos->04. Comunicación -> USBSerilalAdaptor`
 
 <div style="text-align: right;">
-    <a href="/docs/9-Comunicacion_serial/code/serial.ino" download="serial.ino">
+    <a href="/docs/9-Comunicacion_serial/code/serial.ino" download="USBSerilalAdaptor.ino">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            Download 
+            USBSerilalAdaptor.ino
         </button>
     </a>
 </div>
@@ -76,8 +56,7 @@ void loop() {
 
 }
 ```
-## Ejemplo práctico
-### Comunicación uno a uno: Explorando la Comunicación entre Computadoras
+## Comunicación uno a uno: Explorando la Comunicación entre Computadoras
 
 En el contexto de la comunicación uno a uno entre computadoras, se presenta un ejemplo ilustrativo que utiliza el CH552 en combinación con un convertidor USB TTL. Este enfoque resulta especialmente útil en situaciones donde no se disponga de otros dispositivos USB seriales para facilitar la comunicación.
 

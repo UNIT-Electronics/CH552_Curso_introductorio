@@ -17,7 +17,8 @@ La Modulación de Ancho de Pulso (PWM) es una técnica utilizada para controlar 
 ---
 Para probar el ejemplo, es necesario seguir los siguientes pasos:
 
-1. Descargar el archivo:
+- Descarga el archivo:
+
 
 <div style="text-align: center;">
     <a href="/docs/9-Controlador_pwm/codes/CH552-PWM.zip" download="CH552-PWM.zip">
@@ -27,8 +28,10 @@ Para probar el ejemplo, es necesario seguir los siguientes pasos:
     </a>
 </div>
 
-2. Abre el archivo `CH552-PWM.ino` con Arduino IDE.
-3. Configura el entorno con las siguientes especificaciones:
+- Dentro de la carpeta **CH552-PWM** existe un archivo que lleva por nombre `CH552-PWM.ino` abre el archivo con Arduino IDE.
+- Configura el entorno con las siguientes especificaciones:
+
+
 ```c
    - Reloj: 16 MHz.
    - Método de carga: USB.
