@@ -4,8 +4,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ### [Hugo](https://gohugo.io) documentation theme as simple as plain book
-
 ![Screenshot](https://github.com/alex-shpak/hugo-book/blob/master/images/screenshot.png)
+
+<!-- ![Screenshot](https://github.com/alex-shpak/hugo-book/blob/master/images/screenshot.png) -->
 
 - [Features](#features)
 - [Requirements](#requirements)

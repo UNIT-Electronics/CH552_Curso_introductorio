@@ -2,8 +2,8 @@ dist: xenial
 language: go
 go:
 - 1.11.x
-
-# before_install
+# Introducción al CH552
+# before_install 
 # install - install any dependencies required
 install:
     - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_extended_0.68.3_Linux-64bit.deb
