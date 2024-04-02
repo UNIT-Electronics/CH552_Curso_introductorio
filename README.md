@@ -1,7 +1,7 @@
 # Introdución  al CH552
 
 Proyecto princial `git`
-[Curso_introductorio_CH552](/).
+[Curso_introductorio_CH552](https://unit-electronics.github.io/CH552_Curso_introductorio/).
 
 ## Consulta mayor información
 
