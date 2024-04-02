@@ -19,7 +19,7 @@ Inicie `Arduino-IDE. En Archivo->Preferencias`, pestaña Configuración, ingrese
 
 ---
 ```sh
-https://raw.githubusercontent.com/DeqingSun/ch55xduino/ch55xduino/package_ch55xduino_mcs51_index.json
+https://raw.githubusercontent.com/Cesarbautista10/Uelectronics-CH552-Arduino-Package-/main/package_duino_mcs51_index.json
 ```
 ---
 <p align="center">
@@ -27,7 +27,7 @@ https://raw.githubusercontent.com/DeqingSun/ch55xduino/ch55xduino/package_ch55xd
 </p>
 
 * Abrir `*Herramientas->Placa:...->Gestor de tarjetas*`
-* Encuentra Ch55xduino escribiendo `ch` en la línea de búsqueda
+* Encuentra `Ch55x SketchLab` escribiendo `ch` en la línea de búsqueda
 <p align="center">
     <img src="/docs/3-Compilador_mcs51/images/ch55x.png" alt="Imagen de ch552">
 </p>
@@ -102,7 +102,7 @@ Posteriormente instalar individualmente el controlador [CH375](https://www.wch-i
 </div>
 <div style="width: 100%; max-width: 800px; border: 1px solid #000; padding: 20px; margin: 10px auto; background-color: lightblue; border-radius: 15px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); text-align: center;">
     <div style="font-size: 16px; line-height: 1.5; color: #333;">
-        Versión de CH55xduino 0.0.16
+        Versión de CH55xduino 0.0.20
     </div>
 </div>
 

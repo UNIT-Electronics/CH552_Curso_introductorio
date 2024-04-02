@@ -7,7 +7,7 @@ BookToC: false
 
 # Comunicación con neopixels 
 
-La tarjeta de desarrollo cuenta con capacidades de E/S versátiles en esta ocasión control de tiras de LED RGB programables individualmente conocidas como Neopixels. Hemos adaptado el código original de Stefan Wagner con el objetivo de lograr una comunicación eficiente y fluida en el chip ch552.
+La tarjeta de desarrollo cuenta con capacidades de E/S versátiles en esta ocasión control de tiras de LED RGB programables individualmente conocidas como Neopixels. Hemos adaptado el código original de [Stefan Wagner](https://github.com/wagiminator) con el objetivo de lograr una comunicación eficiente y fluida en el chip ch552.
 
 Los Neopixels utilizan el protocolo WS2812, que implica enviar una serie de bits que representan los valores de color para cada LED en la cadena. Se debe generar la secuencia de bits de acuerdo con las especificaciones del protocolo.
 
@@ -19,6 +19,15 @@ Aquí hay una guía general sobre cómo podrías conectar el chip CH552 a las ti
 
 ## Compilar proyecto
 ---
+
+### Uso por Entorno
+
+Puedes acceder al código de ejemplo utilizando la siguiente ruta:
+```arduino
+  File -> Examples -> Unit_SketchLab_Advance -> neopixel_lite.ino
+```
+
+### Uso por Descarga del Código
 Para probar el ejemplo, es necesario seguir los siguientes pasos:
 
 - Descarga el archivo:
@@ -32,7 +41,8 @@ Para probar el ejemplo, es necesario seguir los siguientes pasos:
   </div>
 
 - Dentro de la carpeta **neopixel_lite** existe un archivo que lleva por nombre `neopixel_lite.ino` abre el archivo con Arduino IDE.
-- Configura el entorno con las siguientes especificaciones:
+
+### Configura el entorno con las siguientes especificaciones:
 
 ```c
    - Reloj: 16 MHz.
@@ -58,7 +68,7 @@ Presione cargar código y espere hasta que muestre el mensaje Reset `ok`.
 </p>
 
 
-**Conexiones físicas:** Conecta la salida de datos del Neopixel (generalmente marcada como "DIN" o "Data Input") a un pin de salida del chip CH552 para este ejemplo usaremos el PIN P32. Asegúrate de que los niveles de voltaje sean compatibles (generalmente 5V).
+**Conexiones físicas:** Conecta la salida de datos del Neopixel a un pin de salida del chip CH552 para este ejemplo usaremos el PIN P33. 
 
 **Fuente de Alimentación:** Asegúrate de tener una fuente de alimentación adecuada para los Neopixels. Pueden requerir más corriente de la que el chip CH552 puede proporcionar directamente, regularmente un led WS2812 a su máximo brillo puede llegar a consumir hasta 60 mA.
 
@@ -82,19 +92,7 @@ Puedes cambiar la configuración de velocidad y número Neopixels, así como niv
 ```
 
 
-
-# Continua con el curso [](/)
-
 Para completar la carga del código, presiona el botón de boot mientras se conecta vía USB.
-
-<div style="text-align: right;">
-    <a href="" download=".ino">
-        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            Download 
-        </button>
-    </a>
-</div>
-
 
 <div style="text-align: right">
     <h1><a href="/docs/12-comunicacion_serial/">Siguiente</a></h>

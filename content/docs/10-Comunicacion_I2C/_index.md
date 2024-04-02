@@ -7,7 +7,7 @@ BookToC: false
 
 # Comunicación I2C
 ---
-En la intersección de la innovación tecnológica y la creatividad visual, las pantallas OLED desempeñan un papel central. Este repositorio se enfoca en el proceso de configuración de un modelo específico: la pantalla OLED SSD1306. Hemos adaptado el código original de Stefan Wagner con el objetivo de lograr una comunicación eficiente y fluida en el chip ch552. Para lograrlo, utilizamos el protocolo I2C y el entorno de programación Arduino IDE.
+En la intersección de la innovación tecnológica y la creatividad visual, las pantallas OLED desempeñan un papel central. Este repositorio se enfoca en el proceso de configuración de un modelo específico: la pantalla OLED SSD1306. Hemos adaptado el código original de [Stefan Wagner](https://github.com/wagiminator) con el objetivo de lograr una comunicación eficiente y fluida en el chip ch552. Para lograrlo, utilizamos el protocolo I2C y el entorno de programación Arduino IDE.
 
 
 
@@ -21,12 +21,21 @@ Exploraremos los pasos fundamentales para realizar esta configuración, haciendo
 
 ## Compilar proyecto
 ---
-Para probar el ejemplo, es necesario seguir los siguientes pasos:
+
+### Uso por Entorno
+
+Puedes acceder al código de ejemplo utilizando la siguiente ruta:
+```arduino
+  File -> Examples -> Unit_SketchLab_Advance -> oled_hola_mundo.ino
+```
+
+### Uso por Descarga del Código
+
 
 - Descarga el archivo:
 
 <div style="text-align: center;">
-    <a href="/docs/9-Controlador_pwm/code/oled_hola_mundo.zip" download="oled_hola_mundo.zip">
+    <a href="/docs/10-Comunicacion_I2C/code/oled_hola_mundo.zip" download="oled_hola_mundo.zip">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
            oled_hola_mundo.zip
         </button>
@@ -35,7 +44,7 @@ Para probar el ejemplo, es necesario seguir los siguientes pasos:
 
 - Dentro de la carpeta **oled_hola_mundo** existe un archivo que lleva por nombre `oled_hola_mundo.ino` abre el archivo con Arduino IDE.
 
-- Configura el entorno con las siguientes especificaciones:
+### Configura el entorno con las siguientes especificaciones:
 ```c
    - Reloj: 16 MHz.
    - Método de carga: USB.

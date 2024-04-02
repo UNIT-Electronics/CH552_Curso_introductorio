@@ -18,6 +18,9 @@ El desarrollo de este ejemplo se enfoca en el control de pines de salida digital
 
 ## Código
 ---
+Ejemplo: 
+> Puedes acceder al código de ejemplo, siguiendo la ruta: `File -> Examples -> Unit_SketchLab -> Blink.ino`
+
 
 <div style="text-align: right;">
     <a href="/docs/4-Salidas_digitales/code/blink.ino" download="blink.ino">

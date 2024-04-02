@@ -21,11 +21,14 @@ La lógica del código implica que, cuando el botón está presionado (pin `P1.1
 
 ## Código
 ---
+
+> Puedes acceder al código de ejemplo, siguiendo la ruta: `File -> Examples -> Unit_SketchLab -> DigitalReadInput.ino`
+
 Se utiliza una estructura de control if-else para evaluar el estado del botón y tomar decisiones en consecuencia.
 <div style="text-align: right;">
-    <a href="/docs/6-Entradas_digitales/code/input_digital.ino" download="input_digital.ino">
+    <a href="/docs/6-Entradas_digitales/code/input_digital.ino" download="DigitalReadInput.ino">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            Descarga input_digital.ino 
+            Descarga DigitalReadInput.ino 
         </button>
     </a>
 </div>

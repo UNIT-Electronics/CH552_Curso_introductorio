@@ -24,6 +24,8 @@ El pin `P1.1` se configura como entrada analógica, y se utiliza la función `an
 ## Código
 
 Este tipo de código es útil para la lectura de sensores analógicos, como potenciómetros o sensores de luz, donde la variación de voltaje proporciona información sobre la cantidad medida.
+Ejemplo: 
+> Puedes acceder al código de ejemplo, siguiendo la ruta: `File -> Examples -> Unit_SketchLab -> AnalogInput.ino`
 
 <div style="text-align: right;">
     <a href="/docs/8-Entradas_analogicas/code/adc.ino" download="adc.ino">

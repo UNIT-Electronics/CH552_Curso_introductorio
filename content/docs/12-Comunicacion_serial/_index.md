@@ -17,7 +17,8 @@ El microcontrolador CH552 ofrece una amplia gama de capacidades y aplicaciones, 
 
 ### Verificación de código
 
-Abre el ejemplo **USBSerilalAdaptor.ino** desde `Archivo->Ejemplos->04. Comunicación -> USBSerilalAdaptor`
+Abre el ejemplo **USBSerilalAdaptor.ino** desde   `File -> Examples -> Unit_SketchLab -> USBSerilalAdaptor.ino`
+
 
 <div style="text-align: right;">
     <a href="/docs/9-Comunicacion_serial/code/serial.ino" download="USBSerilalAdaptor.ino">
@@ -55,6 +56,28 @@ void loop() {
 
 }
 ```
+## Compilar y correr un programa
+---
+Para poder cargar el archivo, configura el entorno con las siguientes especificaciones:
+
+```C
+Reloj: 16 Mhz.
+
+Método de carga: USB.
+
+Ajuste de carga a:  "Default CDC".
+```
+
+
+<p align="center">
+    <img src="/docs/4-Salidas_digitales/images/config.png" alt="LED">
+</p>
+
+
+Carga un programa ingresando al modo de <strong>BOOT</strong> (cargador de arranque). Desconecte el cable USB, presione el botón <strong>BOOT</strong> en la tarjeta de desarrollo y luego vuelve a conectar a la PC.
+
+<img src="/docs/3-Compilador_mcs51/images/pc_ch.png" alt="Imagen de ch552">
+
 ## Comunicación uno a uno: Explorando la Comunicación entre Computadoras
 
 En el contexto de la comunicación uno a uno entre computadoras, se presenta un ejemplo ilustrativo que utiliza el CH552 en combinación con un convertidor USB TTL. Este enfoque resulta especialmente útil en situaciones donde no se disponga de otros dispositivos USB seriales para facilitar la comunicación.
@@ -69,12 +92,6 @@ Por ello se propone el uso de dos interfaces de comunicación para la verificaci
 ![](/docs/9-Comunicacion_serial/images/py_code.png)
 
 ```
-   \\  ─────────▄▲▲▲────────
-   \\  ─────▄█▀▌██████▄──────
-   \\  ────▐███▌███████▐▄────
-   \\  ─────▀██▌▄▐███▌▄▐██▐▌▀
-   \\  ─────────█─────█──────
-
 
 \\          _______________                            _______________  
 \\         |  ___________  |                          |  ___________  |    
@@ -91,16 +108,27 @@ Por ello se propone el uso de dos interfaces de comunicación para la verificaci
 
 
 Prueba de funcionamiento
+<div style="text-align: right;">
+    <a href="/docs/12-Comunicacion_serial/code/interface_Serial.zip" download="interface_Serial.zip">
+        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+            Interface_Serial.zip
+        </button>
+    </a>
+</div>
 
 ![](/docs/12-Comunicacion_serial/images/test_code.png)
 
 Si bien no solo se puede usar como un convertidor USB a TTL, sino también puede introducir ciertas secciones de código para realizar ciertas funciones independientes.
 
+Abre el ejemplo **USBSerilalAdaptor2.ino** desde   `File -> Examples -> Unit_SketchLab_Advance -> USBSerilalAdaptor2.ino`
+
+
+[Instalación de python](https://www.python.org/downloads/)
+
 Para instalar la interfaz es necesario la biblioteca de pyserial, para hacer uso de puertos seriales COM disponibles.
 
  ```py
 pip install pyserial
-
  ```
 
 
@@ -109,16 +137,11 @@ pip install pyserial
 
 El convertidor USB a TTL CH552, permite elaborar rutinas internas como secuencia de encendido de led o respuesta de algún parámetro se desee visualizar, ejecutar internamente del microcontrolador.
 
- 
 
 El código de ch552-USB-TTLpermite establecer las rutinas personalizadas realizando las adecuaciones necesarias al código ejemplo dado por el desarrollador.
-<div style="text-align: right;">
-    <a href="/docs/12-Comunicacion_serial/code/UsbSerialAdaptor2.ino" download="UsbSerialAdaptor2.ino">
-        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            Download 
-        </button>
-    </a>
-</div>
+
+
+[Instalación de PUTTY](https://putty.org/)
 
 ![](/docs/12-Comunicacion_serial/images/test_code2.png)
 
@@ -126,7 +149,6 @@ El código de ch552-USB-TTLpermite establecer las rutinas personalizadas realiza
 
 
 
-# Continua con el curso [](/)
 
 
 

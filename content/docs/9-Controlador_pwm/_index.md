@@ -13,23 +13,32 @@ El CH552 es un microcontrolador USB que ofrece versatilidad en las Entradas/Sali
 
 La Modulación de Ancho de Pulso (PWM) es una técnica utilizada para controlar la potencia entregada a un dispositivo. Se logra variando la duración de una señal digital de alta frecuencia, controlando así la cantidad de potencia entregada al dispositivo. Esto es útil en diversas aplicaciones, como el control de motores, ajuste de brillo de LED y generación de señales analógicas.
 
-## Compilar proyecto
----
-Para probar el ejemplo, es necesario seguir los siguientes pasos:
+## Uso del proyecto
 
-- Descarga el archivo:
+### Uso por Entorno 
+
+Puedes acceder al código de ejemplo utilizando la siguiente ruta:
+```arduino
+  File -> Examples -> Unit_SketchLab_Advance -> CH552-PWM.ino
+```
+
+### Uso por Descarga del Código
+
+- Descarga el archivo haciendo clic en el siguiente enlace:
 
 
 <div style="text-align: center;">
-    <a href="/docs/9-Controlador_pwm/codes/CH552-PWM.zip" download="CH552-PWM.zip">
-        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            CH552-PWM.zip
-        </button>
-    </a>
+  <a href="/docs/9-Controlador_pwm/codes/CH552-PWM.zip" download="CH552-PWM.zip">
+    <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+      CH552-PWM.zip
+    </button>
+  </a>
 </div>
 
+
 - Dentro de la carpeta **CH552-PWM** existe un archivo que lleva por nombre `CH552-PWM.ino` abre el archivo con Arduino IDE.
-- Configura el entorno con las siguientes especificaciones:
+
+### Configura el entorno con las siguientes especificaciones:
 
 
 ```c

@@ -47,11 +47,12 @@ Se utiliza el pin `P3.3` como salida para un LED.
 
 ## Código
 ---
+> Puedes acceder al código de ejemplo, siguiendo la ruta: `File -> Examples -> Unit_SketchLab -> DigitalOpenDrain.ino`
 
 <div style="text-align: right;">
-    <a href="/docs/7-Entradas_open_drain/code/open_drain.ino" download="open_drain.ino">
+    <a href="/docs/7-Entradas_open_drain/code/open_drain.ino" download="DigitalOpenDrain.ino">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            Descarga Open_drain.ino
+            Descarga DigitalOpenDrain.ino
         </button>
     </a>
 </div>
