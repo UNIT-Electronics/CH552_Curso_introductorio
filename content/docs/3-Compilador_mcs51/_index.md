@@ -27,7 +27,7 @@ https://raw.githubusercontent.com/Cesarbautista10/Uelectronics-CH552-Arduino-Pac
 </p>
 
 * Abrir `*Herramientas->Placa:...->Gestor de tarjetas*`
-* Encuentra `Ch55x SketchLab` escribiendo `ch` en la línea de búsqueda
+* Encuentra `Cocket Nova` escribiendo `ch` en la línea de búsqueda
 <p align="center">
     <img src="/docs/3-Compilador_mcs51/images/ch55x.png" alt="Imagen de ch552">
 </p>
