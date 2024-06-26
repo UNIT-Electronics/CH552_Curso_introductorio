@@ -85,7 +85,7 @@ En el contexto de la comunicación uno a uno entre dispositivos seriales, se pre
 Por ello se propone el uso de una interfaz de comunicación para la verificación del funcionamiento, un chat a partir de la comunicación serial.
 
 
-![](/docs/9-Comunicacion_serial/images/py_code.png)
+![](/docs/12-Comunicacion_serial/images/py_code.png)
 
 ```
 
@@ -136,16 +136,26 @@ Antes de adentrarse en la comunicación serial, es necesario configurar el entor
     python -m chatos
     ```
 
-    ![](/docs/12-Comunicacion_serial/images/chatos.png)
+
+    <div style="text-align: center;">
+       <img src="/docs/12-Comunicacion_serial/images/chatos.png" alt="chatos">
+    </div>
+
 
     La funcionalidad de la interfaz es simple: actualizar las conexiones disponibles y conectarse al dispositivo CH552, para lo cual necesitas conocer el puerto COM.
 
-    ![](/docs/12-Comunicacion_serial/images/chatos_connect.png)
+    <div style="text-align: center;">
+       <img src="/docs/12-Comunicacion_serial/images/chatos_connect.png" alt="chatos">
+    </div>
+
+
 
 **Nota:** Para usar otro "Chat" en el mismo dispositivo para pruebas, abre una nueva consola y escribe el comando `python -m chatos`. Esto abrirá una nueva interfaz que permitirá comunicar dos dispositivos COM.
 
 
-![](/docs/12-Comunicacion_serial/images/test_code.png)
+  <div style="text-align: center;">
+      <img src="/docs/12-Comunicacion_serial/images/test_code.png" alt="chatos">
+  </div>
 
 Si bien no solo se puede usar como un convertidor USB a TTL, sino también puede introducir ciertas secciones de código para realizar ciertas funciones independientes.
 
@@ -163,7 +173,12 @@ El código de ch552-USB-TTL permite establecer las rutinas personalizadas realiz
 
 [Instalación de PUTTY](https://putty.org/)
 
-![](/docs/12-Comunicacion_serial/images/test_code2.png)
+  <div style="text-align: center;">
+      <img src="/docs/12-Comunicacion_serial/images/test_code2.png" alt="chatos">
+  </div>
+
+
+
 
 > **Nota:** Ten en cuenta que este código es un ejemplo y puede que necesites ajustarlo según tu configuración específica y tus necesidades.
 
