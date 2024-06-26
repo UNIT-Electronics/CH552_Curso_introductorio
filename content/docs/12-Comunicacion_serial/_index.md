@@ -21,7 +21,7 @@ Abre el ejemplo **USBSerilalAdaptor.ino** desde   `File -> Examples -> Unit_Sket
 
 
 <div style="text-align: right;">
-    <a href="/docs/9-Comunicacion_serial/code/serial.ino" download="USBSerilalAdaptor.ino">
+    <a href="/docs/12-Comunicacion_serial/code/serial.ino" download="USBSerilalAdaptor.ino">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
             USBSerilalAdaptor.ino
         </button>
@@ -78,15 +78,11 @@ Carga un programa ingresando al modo de <strong>BOOT</strong> (cargador de arran
 
 <img src="/docs/3-Compilador_mcs51/images/pc_ch.png" alt="Imagen de ch552">
 
-## Comunicación uno a uno: Explorando la Comunicación entre Computadoras
+## Comunicación uno a uno: Explorando la Comunicación entre Dispositivos Seriales
 
-En el contexto de la comunicación uno a uno entre computadoras, se presenta un ejemplo ilustrativo que utiliza el CH552 en combinación con un convertidor USB TTL. Este enfoque resulta especialmente útil en situaciones donde no se disponga de otros dispositivos USB seriales para facilitar la comunicación.
+En el contexto de la comunicación uno a uno entre dispositivos seriales, se presenta un ejemplo ilustrativo que utiliza el CH552 en combinación con un convertidor USB TTL. Este enfoque resulta especialmente útil en situaciones donde no se disponga de otros dispositivos USB seriales para facilitar la comunicación, esta solución adquiere un valor significativo. Permite que dos dispositivos se comuniquen entre sí sin depender de recursos externos, facilitando el intercambio de información y datos de manera eficiente.
 
-El propósito de esta configuración es establecer una comunicación directa entre dos computadoras. Para lograrlo, se emplea el CH552, un componente que desempeña un papel crucial en la interconexión. Junto con el convertidor USB TTL, se establece un vínculo robusto y confiable.
-
-En escenarios donde la disponibilidad de otros dispositivos USB seriales es limitada o inexistente, esta solución adquiere un valor significativo. Permite que dos computadoras se comuniquen entre sí sin depender de recursos externos, facilitando el intercambio de información y datos de manera eficiente.
-
-Por ello se propone el uso de dos interfaces de comunicación para la verificación del funcionamiento, un chat a partir de la comunicación serial.
+Por ello se propone el uso de una interfaz de comunicación para la verificación del funcionamiento, un chat a partir de la comunicación serial.
 
 
 ![](/docs/9-Comunicacion_serial/images/py_code.png)
@@ -107,14 +103,47 @@ Por ello se propone el uso de dos interfaces de comunicación para la verificaci
 ```
 
 
-Prueba de funcionamiento
-<div style="text-align: right;">
+
+
+### Prueba de Funcionamiento
+
+<!-- <div style="text-align: right;">
     <a href="/docs/12-Comunicacion_serial/code/interface_Serial.zip" download="interface_Serial.zip">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
             Interface_Serial.zip
         </button>
     </a>
-</div>
+</div> -->
+
+Antes de adentrarse en la comunicación serial, es necesario configurar el entorno. Para ello, sigue los siguientes pasos:
+
+1. **Instalar [Python](https://www.python.org/):** Verifica la instalación en una consola o shell con el siguiente comando:
+   
+    ```bash
+    python --version
+    ```
+
+2. **Instalar el paquete de pruebas:** Este paquete contiene una interfaz para la comunicación serial. Instálalo con:
+
+    ```bash 
+    pip install chatos 
+    ```
+
+
+3. **Abrir una consola o shell y ejecutar el siguiente comando:**
+
+    ```bash 
+    python -m chatos
+    ```
+
+    ![](/docs/12-Comunicacion_serial/images/chatos.png)
+
+    La funcionalidad de la interfaz es simple: actualizar las conexiones disponibles y conectarse al dispositivo CH552, para lo cual necesitas conocer el puerto COM.
+
+    ![](/docs/12-Comunicacion_serial/images/chatos_connect.png)
+
+**Nota:** Para usar otro "Chat" en el mismo dispositivo para pruebas, abre una nueva consola y escribe el comando `python -m chatos`. Esto abrirá una nueva interfaz que permitirá comunicar dos dispositivos COM.
+
 
 ![](/docs/12-Comunicacion_serial/images/test_code.png)
 
@@ -123,22 +152,13 @@ Si bien no solo se puede usar como un convertidor USB a TTL, sino también puede
 Abre el ejemplo **USBSerilalAdaptor2.ino** desde   `File -> Examples -> Unit_SketchLab_Advance -> USBSerilalAdaptor2.ino`
 
 
-[Instalación de python](https://www.python.org/downloads/)
-
-Para instalar la interfaz es necesario la biblioteca de pyserial, para hacer uso de puertos seriales COM disponibles.
-
- ```py
-pip install pyserial
- ```
-
-
 ## Agregando funcionalidad al CH552 adaptador
  
 
 El convertidor USB a TTL CH552, permite elaborar rutinas internas como secuencia de encendido de led o respuesta de algún parámetro se desee visualizar, ejecutar internamente del microcontrolador.
 
 
-El código de ch552-USB-TTLpermite establecer las rutinas personalizadas realizando las adecuaciones necesarias al código ejemplo dado por el desarrollador.
+El código de ch552-USB-TTL permite establecer las rutinas personalizadas realizando las adecuaciones necesarias al código ejemplo dado por el desarrollador.
 
 
 [Instalación de PUTTY](https://putty.org/)
