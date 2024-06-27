@@ -28,50 +28,53 @@ Ejemplo:
 > Puedes acceder al código de ejemplo, siguiendo la ruta: `File -> Examples -> Unit_SketchLab -> AnalogInput.ino`
 
 <div style="text-align: right;">
-    <a href="/docs/8-Entradas_analogicas/code/adc.ino" download="adc.ino">
+    <a href="/docs/8-Entradas_analogicas/code/adc.ino" download="AnalogInput.ino">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            Descarga adc.ino 
+            Descarga AnalogInput.ino 
         </button>
     </a>
 </div>
 
 ```c
-#include <Serial.h>
+#define LED_BUILTIN 34
+
+int sensorPin = 11;    // select the input pin for the potentiometer. You may use P1.1, P1.4, P1.5 and P3.2
+int ledPin = LED_BUILTIN; // select the pin for the LED
+int sensorValue = 0;  // variable to store the value coming from the sensor
 
 void setup() {
-  // No es necesario inicializar USBSerial
-
-  pinMode(11, INPUT);
+  // declare the ledPin as an OUTPUT:
+  pinMode(ledPin, OUTPUT);
+  //By default 8051 enable every pin's pull up resistor. Disable pull-up to get full input range.
+  pinMode(sensorPin, INPUT);
 }
 
 void loop() {
-  // Leer la entrada en el pin analógico 0, P1.1:
-  int sensorValue = analogRead(11);
-  // Convertir la lectura analógica (que va de 0 a 255) a un voltaje (0 a 3.3V):
-  float voltage = sensorValue * (3.3 / 255.0);
-  // Imprimir el valor leído:
-  USBSerial_println(voltage);
-  // O con precisión:
-  //USBSerial_println(voltage,1);
-
-  delay(10);
+  // read the value from the sensor:
+  sensorValue = analogRead(sensorPin);
+  // turn the ledPin on
+  digitalWrite(ledPin, HIGH);
+  // stop the program for <sensorValue> milliseconds:
+  delay(sensorValue);
+  // turn the ledPin off:
+  digitalWrite(ledPin, LOW);
+  // stop the program for for <sensorValue> milliseconds:
+  delay(sensorValue);
 }
 ```
 ## Descripción de código
 
 Se lee el valor analógico del pin P1.1 utilizando analogRead().
 
-Se convierte este valor (que va de 0 a 255) a un voltaje en el rango de 0 a 3.3V utilizando una simple fórmula. 
+Se usa la lectura del ADC de 0 a 255, para controlar el tiempo del `delay()` para el parpadeo del led. 
+
 
 ## Resultado
-Se muestra en la interfaz de visualización plotter.
-<p align="center">
-    <img src="/docs/8-Entradas_analogicas/images/potter.png" alt="plotter">
-</p>
-
-![](/docs/8-Entradas_analogicas/images/adc.gif)
 
 Este código permite entender cómo funciona la entrada analógica en el CH552, desde la lectura de valores analógicos hasta la conversión de esos valores en unidades de voltaje, lo que es fundamental al trabajar con sensores que proporcionan señales analógicas.
+
+![](/docs/8-Entradas_analogicas/images/cocket_nova.gif)
+
 
 
 <div style="text-align: right">

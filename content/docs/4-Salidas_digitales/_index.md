@@ -19,7 +19,7 @@ El desarrollo de este ejemplo se enfoca en el control de pines de salida digital
 ## Código
 ---
 Ejemplo: 
-> Puedes acceder al código de ejemplo, siguiendo la ruta: `File -> Examples -> Unit_SketchLab -> Blink.ino`
+> Puedes acceder al código de ejemplo, siguiendo la ruta: `Archivo -> Ejemplos -> Unit_SketchLab -> Blink`
 
 
 <div style="text-align: right;">
@@ -30,9 +30,12 @@ Ejemplo:
     </a>
 </div>
 
+> **Nota:** El código mostrado funciona para el LED integrado en la tarjeta de desarrollo, ubicado en el pin 34. Para entender el funcionamiento de las salidas, cambia LED_BUILTIN a 33.
 
 ```c
-#define LED_BUILTIN 33
+#define LED_BUILTIN 34 // 34 to 33
+
+
 
 // the setup function runs once when you press reset or power the board
 void setup() {

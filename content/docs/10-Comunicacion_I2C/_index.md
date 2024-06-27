@@ -15,7 +15,7 @@ En la intersección de la innovación tecnológica y la creatividad visual, las 
     <img src="/docs/10-Comunicacion_I2C/images/oled.png" alt="frecuecy">
 </p>
 
-Exploraremos los pasos fundamentales para realizar esta configuración, haciendo especial hincapié en la obtención del archivo `oled_hola_mundo`, la precisa adaptación de los parámetros de datos en armonía con el entorno ch55xduino y la consecuente capacidad de presentar mensajes de manera efectiva en la pantalla. Acompáñanos en esta travesía de integración tecnológica y expresión visual.
+Exploraremos los pasos fundamentales para realizar esta configuración, haciendo especial hincapié en la obtención del archivo `SSD1306`, la precisa adaptación de los parámetros de datos en armonía con el entorno ch55xduino y la consecuente capacidad de presentar mensajes de manera efectiva en la pantalla. Acompáñanos en esta travesía de integración tecnológica y expresión visual.
 
 
 
@@ -26,7 +26,7 @@ Exploraremos los pasos fundamentales para realizar esta configuración, haciendo
 
 Puedes acceder al código de ejemplo utilizando la siguiente ruta:
 ```arduino
-  File -> Examples -> Unit_SketchLab_Advance -> oled_hola_mundo.ino
+  File -> Examples -> Unit_SketchLab_Advance -> SSD1306.ino
 ```
 
 ### Uso por Descarga del Código
@@ -35,20 +35,20 @@ Puedes acceder al código de ejemplo utilizando la siguiente ruta:
 - Descarga el archivo:
 
 <div style="text-align: center;">
-    <a href="/docs/10-Comunicacion_I2C/code/oled_hola_mundo.zip" download="oled_hola_mundo.zip">
+    <a href="/docs/10-Comunicacion_I2C/code/SSD1306.zip" download="SSD1306.zip">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
            oled_hola_mundo.zip
         </button>
     </a>
 </div>
 
-- Dentro de la carpeta **oled_hola_mundo** existe un archivo que lleva por nombre `oled_hola_mundo.ino` abre el archivo con Arduino IDE.
+- Dentro de la carpeta **SSD1306** existe un archivo que lleva por nombre `SSD1306.zip` abre el archivo con Arduino IDE.
 
 ### Configura el entorno con las siguientes especificaciones:
 ```c
    - Reloj: 16 MHz.
    - Método de carga: USB.
-   - Ajuste de carga a: "USER CODE /w 2866 USB RAM".
+   - Ajuste de carga a: "USER CODE w/ 266B USB ram".
 
 ```
 <div style="text-align: center;">
@@ -62,19 +62,15 @@ Carga un programa ingresando al modo de <strong>BOOT</strong> (cargador de arran
 
 <img src="/docs/3-Compilador_mcs51/images/pc_ch.png" alt="Imagen de ch552">
 
-Presione cargar codigo y espere hasta que muestre el mensaje Resetok.
+Presione cargar codigo y espere hasta que muestre el mensaje Reset OK.
+
 <p align="center">
     <img src="/docs/3-Compilador_mcs51/images/ruin.png" alt="buttons_leds">
 </p>
 
 
 
-
-
 Para configurar nuestra pantalla OLED, hacemos uso del Arduino IDE para cargar los archivos. Por lo que para poder iniciar con nuestro despliesgue se necesita:
-
-
-
 
 
 ```c#

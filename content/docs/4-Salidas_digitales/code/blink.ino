@@ -24,7 +24,7 @@
   http://www.arduino.cc/en/Tutorial/Blink
 */
 
-#define LED_BUILTIN 33
+#define LED_BUILTIN 34
 
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);

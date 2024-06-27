@@ -178,8 +178,6 @@ El código de ch552-USB-TTL permite establecer las rutinas personalizadas realiz
   </div>
 
 
-
-
 > **Nota:** Ten en cuenta que este código es un ejemplo y puede que necesites ajustarlo según tu configuración específica y tus necesidades.
 
 

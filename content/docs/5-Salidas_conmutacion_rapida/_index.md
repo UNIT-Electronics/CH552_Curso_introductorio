@@ -26,7 +26,7 @@ Este c처digo para el CH552 se enfoca en la implementaci처n de la conmutaci처n r�
 ---
 
 Ejemplo: 
-> Puedes acceder al c처digo de ejemplo, siguiendo la ruta: `File -> Examples -> Unit_SketchLab -> BlinkFastFuntion.ino`
+> Puedes acceder al c처digo de ejemplo, siguiendo la ruta: `Archivo -> Ejemplos -> Unit_SketchLab -> BlinkFastFuntion`
 
 <div style="text-align: right;">
     <a href="/docs/5-Salidas_conmutacion_rapida/code/blinkfast.ino" download="blinkfast.ino">

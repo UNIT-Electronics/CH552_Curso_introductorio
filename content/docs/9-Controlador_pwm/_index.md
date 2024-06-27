@@ -44,7 +44,7 @@ Puedes acceder al código de ejemplo utilizando la siguiente ruta:
 ```c
    - Reloj: 16 MHz.
    - Método de carga: USB.
-   - Ajuste de carga a: "USER CODE /w 2866 USB RAM".
+   - Ajuste de carga a: "USER CODE w/ 266B USB ram".
 
 ```
 <div style="text-align: center;">

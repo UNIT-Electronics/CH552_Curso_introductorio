@@ -34,16 +34,20 @@ https://raw.githubusercontent.com/Cesarbautista10/Uelectronics-CH552-Arduino-Pac
 
 Haga clic en **`Instalar`**.
 
-Ahora debería encontrar una nueva entrada *CH55x Boards* en la lista en `*Herramientas->Placa:...*`.
+
+### Elegir la Placa CH552 de la lista
+
+
+Ahora debería encontrar una nueva entrada *Cocket Nova* en la lista en `*Herramientas->Placa:...*`.
 
 <p align="center">
     <img src="/docs/3-Compilador_mcs51/images/menu_ch.png" alt="Imagen de ch552">
 </p>
 
 
-### Elegir la Placa CH552 de la lista
+## Compilar y correr un ejemplo
 
-Abrir el ejemplo estándar Blink desde `Archivo->...->Ejemplos->01. Básico->Blink`
+Abrir el ejemplo estándar Blink desde `Archivo->...->Ejemplos->Unit_SketchLab->Blink`
 
 <p align="center">
     <img src="/docs/3-Compilador_mcs51/images/menu.png" alt="Imagen de ch552">
@@ -61,7 +65,7 @@ Si su microcontrolador nunca se usó con ch55xduino antes, debe hacer que el chi
 <div style="width: 100%; max-width: 800px; border: 1px solid #000; padding: 20px; margin: 10px auto; background-color: lightblue; border-radius: 15px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); text-align: left;">
     <div style="font-weight: bold; font-size: 20px; color: #333; margin-bottom: 20px;">Nota</div>
     <div style="font-size: 16px; line-height: 1.5; color: #333;">
-       Un chip nuevo ingresará automáticamente al gestor de arranque.
+       No es necesario seleccionar algun puerto serial, ya que el controlador se encargara de subir el proyecto 
     </div>
 </div>
 
@@ -75,12 +79,19 @@ Posteriormente y presionar Subir.
 
 Ch55xduino es compatible con los métodos de carga USB y Serial. Si el puerto USB del chip CH552 está conectado a una computadora directamente, se recomienda el método USB.
 
-> Existen situaciones en las que el IDE de Arduino no elije o permite elegir directamente el puerto serial, la recomendación es hacer la prueba de correr el ejemplo en caso de algún error verificar que el controlador del dispositivo se encuentre instalado. 
+<div style="width: 100%; max-width: 800px; border: 1px solid #000; padding: 20px; margin: 10px auto; background-color: peachpuff; border-radius: 15px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); text-align: left;">
+    <div style="font-weight: bold; font-size: 20px; color: #D2691E; margin-bottom: 20px;">Advertencia</div>
+    <div style="font-size: 16px; line-height: 1.5; color: #D2691E;">
+         Existen situaciones en las que el IDE de Arduino no elije o permite elegir directamente el puerto serial, la recomendación es hacer la prueba de correr el ejemplo en caso de algún error verificar que el controlador del dispositivo se encuentre instalado. 
+    </div>
+</div>
+
+
 
 
 ### Controlador
 
-La herramienta de carga actual puede usar el controlador [CH375](https://www.wch-ic.com/search?q=CH375&t=downloads) predeterminado y coexistir con la [WCHISPTool](http://www.wch.cn/downloads/WCHISPTool_Setup_exe.html) oficial, en caso de que el controlador presente problemas es recomendable cambiar la versión del controlador a WinUSB o libusb-win32, mediante [Zadig](https://zadig.akeo.ie/).
+La herramienta de carga actual puede usar el controlador [CH375](https://www.wch-ic.com/search?q=CH375&t=downloads) predeterminado, en caso de que el controlador presente problemas es recomendable cambiar la versión del controlador a libusb-win32, mediante [Zadig](https://zadig.akeo.ie/).
 
 <p align="center">
     <img src="/docs/3-Compilador_mcs51/images/driver.png" alt="Imagen de zadig">

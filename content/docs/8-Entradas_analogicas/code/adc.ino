@@ -1,20 +1,25 @@
-#include <Serial.h>
+#define LED_BUILTIN 34
+
+int sensorPin = 11;    // select the input pin for the potentiometer. You may use P1.1, P1.4, P1.5 and P3.2
+int ledPin = LED_BUILTIN; // select the pin for the LED
+int sensorValue = 0;  // variable to store the value coming from the sensor
 
 void setup() {
-  // No es necesario inicializar USBSerial
-
-  pinMode(11, INPUT);
+  // declare the ledPin as an OUTPUT:
+  pinMode(ledPin, OUTPUT);
+  //By default 8051 enable every pin's pull up resistor. Disable pull-up to get full input range.
+  pinMode(sensorPin, INPUT);
 }
 
 void loop() {
-  // Leer la entrada en el pin analógico 0, P1.1:
-  int sensorValue = analogRead(11);
-  // Convertir la lectura analógica (que va de 0 a 255) a un voltaje (0 a 3.3V):
-  float voltage = sensorValue * (3.3 / 255.0);
-  // Imprimir el valor leído:
-  USBSerial_println(voltage);
-  // O con precisión:
-  //USBSerial_println(voltage,1);
-
-  delay(10);
+  // read the value from the sensor:
+  sensorValue = analogRead(sensorPin);
+  // turn the ledPin on
+  digitalWrite(ledPin, HIGH);
+  // stop the program for <sensorValue> milliseconds:
+  delay(sensorValue);
+  // turn the ledPin off:
+  digitalWrite(ledPin, LOW);
+  // stop the program for for <sensorValue> milliseconds:
+  delay(sensorValue);
 }
