@@ -61,13 +61,13 @@ Si su microcontrolador nunca se usó con ch55xduino antes, debe hacer que el chi
 </p>
 
 
-
-<div style="width: 100%; max-width: 800px; border: 1px solid #000; padding: 20px; margin: 10px auto; background-color: lightblue; border-radius: 15px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); text-align: left;">
-    <div style="font-weight: bold; font-size: 20px; color: #333; margin-bottom: 20px;">Nota</div>
-    <div style="font-size: 16px; line-height: 1.5; color: #333;">
-       No es necesario seleccionar algun puerto serial, ya que el controlador se encargara de subir el proyecto 
+<div style="width: 100%; max-width: 800px; border: 1px solid #000; padding: 20px; margin: 10px auto; background-color: peachpuff; border-radius: 15px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); text-align: left;">
+    <div style="font-weight: bold; font-size: 20px; color: #D2691E; margin-bottom: 20px;">Nota</div>
+    <div style="font-size: 16px; line-height: 1.5; color: #D2691E;">
+       No es necesario seleccionar algún puerto serial, ya que el controlador se encargará de subir el proyecto.
     </div>
 </div>
+
 
 Posteriormente y presionar Subir.
 
