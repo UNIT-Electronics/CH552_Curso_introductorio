@@ -33,14 +33,14 @@ Para probar el ejemplo, es necesario seguir los siguientes pasos:
 - Descarga el archivo:
 
   <div style="text-align: center;">
-      <a href="/docs/11-Comunicacion_neopixels/code/neopixel_lite.zip" download="neopixel_lite.zip">
-          <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            neopixel_lite.zip
-          </button>
+      <a href="/docs/11-Comunicacion_neopixels/code/WS2012.zip" download="WS2012.zip">
+       <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+            WS2012.zip
+       </button>
       </a>
   </div>
 
-- Dentro de la carpeta **neopixel_lite** existe un archivo que lleva por nombre `neopixel_lite.ino` abre el archivo con Arduino IDE.
+- Dentro de la carpeta **WS2012** existe un archivo que lleva por nombre `WS2012.ino` abre el archivo con Arduino IDE.
 
 ### Configura el entorno con las siguientes especificaciones:
 

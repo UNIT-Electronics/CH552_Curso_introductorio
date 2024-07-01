@@ -1,14 +1,14 @@
 ---
-title: 2. Microcontrolador CH552G
+title: 2. Cocket Nova CH552G
 type: docs
 weight: 2
 BookToC: false
 ---
-# Tarjeta de Desarrollo [Microcontrolador CH552G]()
+# Cocket Nova [Microcontrolador CH552G]()
 ---
-La propuesta de prácticas para el microcontrolador CH552, diseñada para llevar a los usuarios a un aprendizaje básico-intermedio. Este programa busca facilitar la comprensión de los conceptos fundamentales de la tarjeta de desarrollo CH552, así como el uso del microcontrolador y las diversas aplicaciones que pueden desarrollarse mediante su empleo.
+La propuesta de prácticas para la tarjeta de desarrollo Cocket Nova, diseñada para llevar a los usuarios a un aprendizaje básico-intermedio. Este programa busca facilitar la comprensión de los conceptos fundamentales de la tarjeta de desarrollo Cocket Nova CH552, así como el uso del microcontrolador y las diversas aplicaciones que pueden desarrollarse mediante su empleo.
 
-El CH552, caracterizado por su tamaño compacto, conectividad USB nativa, y una memoria de 16 KB (con 14 KB utilizables), posibilita la creación de programas simples pero eficaces. Esto permite un mayor control en la implementación de diversas aplicaciones. La elección de este microcontrolador se basa en su asequibilidad, facilidad de conexión y compatibilidad con varios sistemas operativos.
+La Cocket Nova, caracterizada por su tamaño compacto, conectividad USB nativa, y una memoria de 16 KB (con 14 KB utilizables), posibilita la creación de programas simples pero eficaces. Lo que permite un mayor control en la implementación de diversas aplicaciones. La elección de este microcontrolador se basa en su asequibilidad, facilidad de conexión y compatibilidad con varios sistemas operativos.
 
 # Pinout de la tarjeta
 ---
@@ -37,7 +37,7 @@ El CH552, caracterizado por su tamaño compacto, conectividad USB nativa, y una 
 
 ## Selector de Voltaje
 
-La tarjeta de desarrollo utiliza un ingenioso sistema de selector de voltaje compuesto por tres pines y un jumper switch. La configuración de estos pines determina el voltaje de operación de la tarjeta. Al conectar el pin central al pin +5V a través del jumper, la tarjeta funciona a 5V. Por otro lado, al conectar el pin central al pin +3.3V, se activa el regulador APK2112K, alimentando la tarjeta a 3.3V. Es crucial asegurarse de que el jumper switch esté en la posición correcta según el voltaje deseado para evitar posibles daños a los módulos, componentes y a la tarjeta misma.
+La tarjeta de desarrollo utiliza un ingenioso sistema de selector de voltaje compuesto por tres pines y un jumper switch. La configuración de estos pines determina el voltaje de operación de la tarjeta. Al conectar el pin central al pin +5V a través del jumper, la tarjeta funciona a 5V. Por otro lado, al conectar el pin central al pin +3.3V, se activa el regulador APK2112K, alimentando la tarjeta a 3.3V. Es crucial asegurarse de que el jumper switch esté en la posición correcta según el voltaje deseado para evitar posibles daños a los módulos, componentes y/o a la tarjeta misma.
 <p align="center">
     <img src="/docs/2-Microcontrolador_ch552/images/selector.png" alt="selector">
 </p>

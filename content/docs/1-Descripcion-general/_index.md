@@ -10,7 +10,7 @@ BookToC: false
 -----------------------------
 ## Introducción a la Arquitectura 8051 
 
-La <a href="/" target="_blank">tarjeta de desarrollo CH552</a> representa una plataforma versátil y potente que aprovecha la renombrada arquitectura 8051. Esta arquitectura, concebida originalmente por <a href="https://www.intel.com/" target="_blank">Intel</a> en la década de 1980, ha resistido la prueba del tiempo, destacándose por su eficiencia y confiabilidad. En el corazón del CH552, esta arquitectura proporciona una base robusta para la implementación de proyectos diversos y la creación de soluciones innovadoras. Este repositorio sirve como recurso central para explorar, comprender y aprovechar al máximo las capacidades de la tarjeta CH552 en el contexto de la arquitectura 8051. 
+La <a href="/" target="_blank">tarjeta de desarrollo Cocket Nova</a> representa una plataforma versátil y potente que aprovecha la renombrada arquitectura 8051. Esta arquitectura, concebida originalmente por <a href="https://www.intel.com/" target="_blank">Intel</a> en la década de 1980, ha resistido la prueba del tiempo, destacándose por su eficiencia y confiabilidad. En el corazón del CH552, esta arquitectura proporciona una base robusta para la implementación de proyectos diversos y la creación de soluciones innovadoras. Este repositorio sirve como recurso central para explorar, comprender y aprovechar al máximo las capacidades de la tarjeta CH552 en el contexto de la arquitectura 8051. 
 
 ![](/docs/1-Descripcion-general/images/8051_5.png)
 

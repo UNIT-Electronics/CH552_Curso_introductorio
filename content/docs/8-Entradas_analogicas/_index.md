@@ -73,9 +73,10 @@ Se usa la lectura del ADC de 0 a 255, para controlar el tiempo del `delay()` par
 
 Este código permite entender cómo funciona la entrada analógica en el CH552, desde la lectura de valores analógicos hasta la conversión de esos valores en unidades de voltaje, lo que es fundamental al trabajar con sensores que proporcionan señales analógicas.
 
-![](/docs/8-Entradas_analogicas/images/cocket_nova.gif)
 
-
+<p align="center">
+<img src="/docs/8-Entradas_analogicas/images/cocket_nova.gif" alt="gif">
+</p>
 
 <div style="text-align: right">
     <h1><a href="/docs/9-controlador_pwm/">Siguiente</a></h>

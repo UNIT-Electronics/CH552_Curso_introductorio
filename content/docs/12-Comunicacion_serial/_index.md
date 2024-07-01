@@ -85,7 +85,12 @@ En el contexto de la comunicación uno a uno entre dispositivos seriales, se pre
 Por ello se propone el uso de una interfaz de comunicación para la verificación del funcionamiento, un chat a partir de la comunicación serial.
 
 
-![](/docs/12-Comunicacion_serial/images/py_code.png)
+
+<p align="center">
+    <img src="/docs/12-Comunicacion_serial/images/py_code.png" alt="LED">
+</p>
+
+
 
 ```
 

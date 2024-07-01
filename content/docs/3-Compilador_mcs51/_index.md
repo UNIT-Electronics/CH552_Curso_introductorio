@@ -7,7 +7,7 @@ BookToC: false
 
 # Configuración e instalación 
 ---
-Una configuración rápida del entorno de programación para la tarjeta de desarrollo CH552G puede lograrse aprovechando proyectos ya existentes que simplifican el proceso. Un ejemplo destacado es la <a href="https://github.com/DeqingSun/ch55xduino/tree/ch55xduino" target="_blank">API Ch55xduino</a> diseñada para el <a href="https://www.arduino.cc/" target="_blank">Arduino IDE</a>. Esta API está específicamente diseñada para facilitar la integración y configuración del microcontrolador perteneciente a la familia USB MCS51.
+Una configuración rápida del entorno de programación para la tarjeta de desarrollo Cocket Nova CH552G puede lograrse aprovechando proyectos ya existentes que simplifican el proceso. Un ejemplo destacado es la <a href="https://github.com/DeqingSun/ch55xduino/tree/ch55xduino" target="_blank">API Ch55xduino</a> diseñada para el <a href="https://www.arduino.cc/" target="_blank">Arduino IDE</a>. Esta API está específicamente diseñada para facilitar la integración y configuración del microcontrolador perteneciente a la familia USB MCS51.
 
 Esta iniciativa tiene como objetivo principal eliminar las complicaciones asociadas con la configuración de un entorno de compilación. Al utilizar la `API Ch55xduino`, los desarrolladores pueden agilizar el proceso de programación y aprovechar las capacidades del CH552G de manera más accesible. Esto permite a los usuarios concentrarse en el desarrollo de sus aplicaciones sin la carga de configuraciones tediosas.
 
@@ -35,7 +35,7 @@ https://raw.githubusercontent.com/Cesarbautista10/Uelectronics-CH552-Arduino-Pac
 Haga clic en **`Instalar`**.
 
 
-### Elegir la Placa CH552 de la lista
+### Elegir la Placa Cocket Nova
 
 
 Ahora debería encontrar una nueva entrada *Cocket Nova* en la lista en `*Herramientas->Placa:...*`.
@@ -45,6 +45,16 @@ Ahora debería encontrar una nueva entrada *Cocket Nova* en la lista en `*Herram
 </p>
 
 
+## Controlador
+
+La herramienta de carga actual utiliza el controlador [CH375](https://www.wch-ic.com/search?q=CH375&t=downloads) predeterminado, en caso de que el controlador presente problemas es recomendable cambiar la versión del controlador a `libusb-win32`, mediante [Zadig](https://zadig.akeo.ie/).
+
+<p align="center">
+    <img src="/docs/3-Compilador_mcs51/images/driver.png" alt="Imagen de zadig">
+</p>
+
+Posteriormente instalar individualmente el controlador [CH375](https://www.wch-ic.com/downloads/CH372DRV_EXE.html).
+
 ## Compilar y correr un ejemplo
 
 Abrir el ejemplo estándar Blink desde `Archivo->...->Ejemplos->Unit_SketchLab->Blink`
@@ -53,9 +63,12 @@ Abrir el ejemplo estándar Blink desde `Archivo->...->Ejemplos->Unit_SketchLab->
     <img src="/docs/3-Compilador_mcs51/images/menu.png" alt="Imagen de ch552">
 </p>
 
-### Compilar
+### Verificar y Compilar
 
-Si su microcontrolador nunca se usó con ch55xduino antes, debe hacer que el chip ch552 ingrese al modo de BOOT (cargador de arranque). Este método consiste en desconectar el cable USB, presionar el boton `BOOT` de la tarjeta de desarrollo y reconectar a la `PC`.
+`Ingrese al modo de BOOT (cargador de arranque). `
+
+> Este método consiste en desconectar el cable USB, presionar el boton `BOOT` de la tarjeta de desarrollo y reconectar a la `PC`.
+
 <p align="center">
     <img src="/docs/3-Compilador_mcs51/images/pc_ch.png" alt="Imagen de ch552">
 </p>
@@ -88,16 +101,6 @@ Ch55xduino es compatible con los métodos de carga USB y Serial. Si el puerto US
 
 
 
-
-### Controlador
-
-La herramienta de carga actual puede usar el controlador [CH375](https://www.wch-ic.com/search?q=CH375&t=downloads) predeterminado, en caso de que el controlador presente problemas es recomendable cambiar la versión del controlador a libusb-win32, mediante [Zadig](https://zadig.akeo.ie/).
-
-<p align="center">
-    <img src="/docs/3-Compilador_mcs51/images/driver.png" alt="Imagen de zadig">
-</p>
-
-Posteriormente instalar individualmente el controlador [CH375](https://www.wch-ic.com/downloads/CH372DRV_EXE.html).
 
 ### Prueba de soporte de versiones:
 

@@ -37,7 +37,7 @@ Puedes acceder al código de ejemplo utilizando la siguiente ruta:
 <div style="text-align: center;">
     <a href="/docs/10-Comunicacion_I2C/code/SSD1306.zip" download="SSD1306.zip">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-           oled_hola_mundo.zip
+          SSD1306.zip
         </button>
     </a>
 </div>
