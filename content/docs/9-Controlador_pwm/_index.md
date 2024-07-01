@@ -19,7 +19,7 @@ La Modulación de Ancho de Pulso (PWM) es una técnica utilizada para controlar 
 
 Puedes acceder al código de ejemplo utilizando la siguiente ruta:
 ```arduino
-  File -> Examples -> Unit_SketchLab_Advance -> CH552-PWM.ino
+  File -> Examples -> Unit_SketchLab_Advance -> PWM.ino
 ```
 
 ### Uso por Descarga del Código
@@ -28,9 +28,9 @@ Puedes acceder al código de ejemplo utilizando la siguiente ruta:
 
 
 <div style="text-align: center;">
-  <a href="/docs/9-Controlador_pwm/codes/CH552-PWM.zip" download="CH552-PWM.zip">
+  <a href="/docs/9-Controlador_pwm/code/PWM.zip" download="PWM.zip">
     <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-      CH552-PWM.zip
+      PWM.zip
     </button>
   </a>
 </div>

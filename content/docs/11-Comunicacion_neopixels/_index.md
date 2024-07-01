@@ -24,7 +24,7 @@ Aquí hay una guía general sobre cómo podrías conectar el chip CH552 a las ti
 
 Puedes acceder al código de ejemplo utilizando la siguiente ruta:
 ```arduino
-  File -> Examples -> Unit_SketchLab_Advance -> neopixel_lite.ino
+  File -> Examples -> Unit_SketchLab_Advance -> WS2812.ino
 ```
 
 ### Uso por Descarga del Código
@@ -33,14 +33,14 @@ Para probar el ejemplo, es necesario seguir los siguientes pasos:
 - Descarga el archivo:
 
   <div style="text-align: center;">
-      <a href="/docs/11-Comunicacion_neopixels/code/WS2012.zip" download="WS2012.zip">
+      <a href="/docs/11-Comunicacion_neopixels/code/WS2812.zip" download="WS2812.zip">
        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
-            WS2012.zip
+            WS2812.zip
        </button>
       </a>
   </div>
 
-- Dentro de la carpeta **WS2012** existe un archivo que lleva por nombre `WS2012.ino` abre el archivo con Arduino IDE.
+- Dentro de la carpeta **WS2812** existe un archivo que lleva por nombre `WS2812.ino` abre el archivo con Arduino IDE.
 
 ### Configura el entorno con las siguientes especificaciones:
 
