@@ -1,4 +1,4 @@
-﻿---
+---
 title: 6. Entradas digitales
 type: docs
 weight: 6
@@ -8,23 +8,23 @@ BookToC: false
 # Entradas digitales
 
 ---
-Este cÃ³digo permite interactuar con una entrada digital, en este caso, un botÃ³n conectado al pin `P1.1`. La lectura de este pin se realiza para determinar si el botÃ³n estÃ¡ presionado o no.
+Este código permite interactuar con una entrada digital, en este caso, un botón conectado al pin `P1.1`. La lectura de este pin se realiza para determinar si el botón está presionado o no.
 
-Se utiliza un botÃ³n fÃ­sico conectado al pin `P1.1` y un LED conectado al pin `P3.3` para representar la salida de la acciÃ³n del botÃ³n. 
+Se utiliza un botón físico conectado al pin `P1.1` y un LED conectado al pin `P3.3` para representar la salida de la acción del botón. 
 
 <p align="center">
     <img src="/docs/6-entradas_digitales/images/input_res.png" alt="esquema">
 </p>
 
 
-La lÃ³gica del cÃ³digo implica que, cuando el botÃ³n estÃ¡ presionado (pin `P1.1` leÃ­do como LOW), se enciende el LED (HIGH), y cuando el botÃ³n estÃ¡ suelto, se apaga el LED (LOW).
+La lógica del código implica que, cuando el botón está presionado (pin `P1.1` leído como LOW), se enciende el LED (HIGH), y cuando el botón está suelto, se apaga el LED (LOW).
 
-## CÃ³digo
+## Código
 ---
 
-> Puedes acceder al cÃ³digo de ejemplo, siguiendo la ruta: `File -> Examples -> Unit_SketchLab -> DigitalReadInput.ino`
+> Puedes acceder al código de ejemplo, siguiendo la ruta: `File -> Examples -> Unit_SketchLab -> DigitalReadInput.ino`
 
-Se utiliza una estructura de control if-else para evaluar el estado del botÃ³n y tomar decisiones en consecuencia.
+Se utiliza una estructura de control if-else para evaluar el estado del botón y tomar decisiones en consecuencia.
 <div style="text-align: right;">
     <a href="/docs/6-entradas_digitales/code/input_digital.ino" download="DigitalReadInput.ino">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
@@ -43,9 +43,9 @@ void setup() {
 }
 
 void loop() {
-  // Leer el valor del botÃ³n en una variable
+  // Leer el valor del botón en una variable
   int sensorVal = digitalRead(11);
-  // Imprimir el valor del botÃ³n en el monitor serial
+  // Imprimir el valor del botón en el monitor serial
   USBSerial_println(sensorVal);
   if (sensorVal == HIGH) {
     digitalWrite(33, LOW);
@@ -56,25 +56,25 @@ void loop() {
   delay(10);
 }
 ```
-Este cÃ³digo sirve como una introducciÃ³n prÃ¡ctica a la lectura de entradas digitales y la aplicaciÃ³n de lÃ³gica condicional en el entorno CH552 y Arduino. La relaciÃ³n entre la entrada del botÃ³n y la salida del LED demuestra la capacidad de interactuar con el entorno fÃ­sico mediante la programaciÃ³n.
+Este código sirve como una introducción práctica a la lectura de entradas digitales y la aplicación de lógica condicional en el entorno CH552 y Arduino. La relación entre la entrada del botón y la salida del LED demuestra la capacidad de interactuar con el entorno físico mediante la programación.
 
 **Mensajes en el Monitor Serial**
 
-Para visualizar informaciÃ³n en el Monitor Serial, sigue estos pasos:
+Para visualizar información en el Monitor Serial, sigue estos pasos:
 
-1. DirÃ­gete a `Herramientas -> Puerto`, como se muestra en la siguiente imagen:
+1. Dirígete a `Herramientas -> Puerto`, como se muestra en la siguiente imagen:
 
     <p align="center">
         <img src="/docs/6-entradas_digitales/images/com.png" alt="comserial">
     </p>
 
-2. Se abrirÃ¡ una interfaz donde podrÃ¡s observar el estado del LED, dependiendo de si se ha presionado o no. En la siguiente imagen, se muestra un ejemplo de cÃ³mo se visualiza:
+2. Se abrirá una interfaz donde podrás observar el estado del LED, dependiendo de si se ha presionado o no. En la siguiente imagen, se muestra un ejemplo de cómo se visualiza:
 
     <p align="center">
         <img src="/docs/6-entradas_digitales/images/in.png" alt="frecuecy">
     </p>
 
-Esta interfaz en el Monitor Serial te proporciona informaciÃ³n detallada sobre el estado del LED, permitiÃ©ndote monitorear fÃ¡cilmente las interacciones y eventos asociados al botÃ³n. Utiliza esta herramienta para depurar y entender mejor el comportamiento de tu sistema en tiempo real.
+Esta interfaz en el Monitor Serial te proporciona información detallada sobre el estado del LED, permitiéndote monitorear fácilmente las interacciones y eventos asociados al botón. Utiliza esta herramienta para depurar y entender mejor el comportamiento de tu sistema en tiempo real.
 
 ## Resultados
 ---
@@ -89,6 +89,6 @@ Esta interfaz en el Monitor Serial te proporciona informaciÃ³n detallada sobre
 
 
 ---
-âŒ¨ï¸ con â¤ï¸ por [UNIT-Electronics](https://github.com/UNIT-Electronics) ðŸ˜Š
+⌨️ con ❤️ por [UNIT-Electronics](https://github.com/UNIT-Electronics) 😊
 
 

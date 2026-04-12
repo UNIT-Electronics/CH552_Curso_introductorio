@@ -1,28 +1,28 @@
-﻿---
-title: 9. ConfiguraciÃ³n del PWM
+---
+title: 9. Configuración del PWM
 type: docs
 weight: 9
 BookToC: false
 ---
 
-# ConfiguraciÃ³n del PWM 
+# Configuración del PWM 
 ---
-El CH552 es un microcontrolador USB que ofrece versatilidad en las Entradas/Salidas, incluida la capacidad de generar seÃ±ales PWM. En este ejemplo, se te guiarÃ¡ a travÃ©s de la configuraciÃ³n del CH552 para generar seÃ±ales PWM con una frecuencia y ciclo de trabajo especÃ­ficos.
+El CH552 es un microcontrolador USB que ofrece versatilidad en las Entradas/Salidas, incluida la capacidad de generar señales PWM. En este ejemplo, se te guiará a través de la configuración del CH552 para generar señales PWM con una frecuencia y ciclo de trabajo específicos.
 
-### Conceptos BÃ¡sicos
+### Conceptos Básicos
 
-La ModulaciÃ³n de Ancho de Pulso (PWM) es una tÃ©cnica utilizada para controlar la potencia entregada a un dispositivo. Se logra variando la duraciÃ³n de una seÃ±al digital de alta frecuencia, controlando asÃ­ la cantidad de potencia entregada al dispositivo. Esto es Ãºtil en diversas aplicaciones, como el control de motores, ajuste de brillo de LED y generaciÃ³n de seÃ±ales analÃ³gicas.
+La Modulación de Ancho de Pulso (PWM) es una técnica utilizada para controlar la potencia entregada a un dispositivo. Se logra variando la duración de una señal digital de alta frecuencia, controlando así la cantidad de potencia entregada al dispositivo. Esto es útil en diversas aplicaciones, como el control de motores, ajuste de brillo de LED y generación de señales analógicas.
 
 ## Uso del proyecto
 
 ### Uso por Entorno 
 
-Puedes acceder al cÃ³digo de ejemplo utilizando la siguiente ruta:
+Puedes acceder al código de ejemplo utilizando la siguiente ruta:
 ```arduino
   File -> Examples -> Unit_SketchLab_Advance -> PWM.ino
 ```
 
-### Uso por Descarga del CÃ³digo
+### Uso por Descarga del Código
 
 - Descarga el archivo haciendo clic en el siguiente enlace:
 
@@ -43,7 +43,7 @@ Puedes acceder al cÃ³digo de ejemplo utilizando la siguiente ruta:
 
 ```c
    - Reloj: 16 MHz.
-   - MÃ©todo de carga: USB.
+   - Método de carga: USB.
    - Ajuste de carga a: "USER CODE w/ 266B USB ram".
 
 ```
@@ -54,7 +54,7 @@ Puedes acceder al cÃ³digo de ejemplo utilizando la siguiente ruta:
 ## Compilar y correr un programa
 ---
 
-Carga un programa ingresando al modo de <strong>BOOT</strong> (cargador de arranque). Desconecte el cable USB, presione el botÃ³n <strong>BOOT</strong> en la tarjeta de desarrollo y luego vuelve a conectar a la PC.
+Carga un programa ingresando al modo de <strong>BOOT</strong> (cargador de arranque). Desconecte el cable USB, presione el botón <strong>BOOT</strong> en la tarjeta de desarrollo y luego vuelve a conectar a la PC.
 
 <img src="/docs/3-compilador_mcs51/images/pc_ch.png" alt="Imagen de ch552">
 
@@ -64,11 +64,11 @@ Presione cargar codigo y espere hasta que muestre el mensaje Resetok.
 </p>
 
 
-**A continuaciÃ³n, se describe el funcionamiento del cÃ³digo para generar seÃ±ales PWM:**
+**A continuación, se describe el funcionamiento del código para generar señales PWM:**
 
-Al abrir el IDE, este despliega dos archivos. Dado que Arduino actÃºa simplemente como un compilador, la estructura del cÃ³digo presentado experimentarÃ¡ cambios al ser procesado. Por lo tanto, se sugiere abrir el proyecto completo utilizando un editor de cÃ³digo preferido.
+Al abrir el IDE, este despliega dos archivos. Dado que Arduino actúa simplemente como un compilador, la estructura del código presentado experimentará cambios al ser procesado. Por lo tanto, se sugiere abrir el proyecto completo utilizando un editor de código preferido.
 
-En este contexto, se recomienda el uso de <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>. El primer archivo corresponde a una interfaz de compilaciÃ³n. Este entorno de desarrollo proporciona una visiÃ³n integral del proyecto, permitiendo un manejo mÃ¡s eficiente y una comprensiÃ³n mÃ¡s profunda de la estructura del cÃ³digo.
+En este contexto, se recomienda el uso de <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>. El primer archivo corresponde a una interfaz de compilación. Este entorno de desarrollo proporciona una visión integral del proyecto, permitiendo un manejo más eficiente y una comprensión más profunda de la estructura del código.
 ```c
 #ifndef USER_USB_RAM
 #error "This firmware needs to be compiled with a USER USB setting"
@@ -79,9 +79,9 @@ unsigned char _sdcc_external_startup (void) __nonbanked {
 }
 
 ```
-El segundo abre el cÃ³digo que permite hacer la funciÃ³n deseada:
+El segundo abre el código que permite hacer la función deseada:
 
- Este cÃ³digo incluye funciones para cambiar la seÃ±al PWM y un bucle principal que realiza transiciones suaves.
+ Este código incluye funciones para cambiar la señal PWM y un bucle principal que realiza transiciones suaves.
 
 
 
@@ -128,9 +128,9 @@ while (1)
 
 ```
 
-El cÃ³digo proporciona una implementaciÃ³n prÃ¡ctica de PWM utilizando el microcontrolador CH552 y el entorno de desarrollo Arduino IDE. Se ha incorporado un bucle principal que ejecuta transiciones suaves en la salida PWM, lo cual resulta aplicable en diversas situaciones prÃ¡cticas. Entre estas aplicaciones, se destacan el control de motores para lograr movimientos suaves y el ajuste gradual de la intensidad luminosa de una fuente de luz.
+El código proporciona una implementación práctica de PWM utilizando el microcontrolador CH552 y el entorno de desarrollo Arduino IDE. Se ha incorporado un bucle principal que ejecuta transiciones suaves en la salida PWM, lo cual resulta aplicable en diversas situaciones prácticas. Entre estas aplicaciones, se destacan el control de motores para lograr movimientos suaves y el ajuste gradual de la intensidad luminosa de una fuente de luz.
 
-De manera predeterminada, la tarjeta de desarrollo del CH552 cuenta con un LED conectado al pin `P3.4`, y la configuraciÃ³n especÃ­fica se encuentra en el archivo `scr\config.h`.
+De manera predeterminada, la tarjeta de desarrollo del CH552 cuenta con un LED conectado al pin `P3.4`, y la configuración específica se encuentra en el archivo `scr\config.h`.
 ```html
 // Pin definitions
 #define PIN_BUZZER          P33       // buzzer pin
@@ -165,5 +165,5 @@ De manera predeterminada, la tarjeta de desarrollo del CH552 cuenta con un LED c
 
 
 
-âŒ¨ï¸ con â¤ï¸ por [UNIT-Electronics](https://github.com/UNIT-Electronics) ðŸ˜Š
+⌨️ con ❤️ por [UNIT-Electronics](https://github.com/UNIT-Electronics) 😊
  

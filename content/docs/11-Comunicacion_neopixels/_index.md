@@ -1,17 +1,17 @@
-﻿---
-title: 11. ComunicaciÃ³n con neopixels
+---
+title: 11. Comunicación con neopixels
 type: docs
 weight: 11
 BookToC: false
 ---
 
-# ComunicaciÃ³n con neopixels 
+# Comunicación con neopixels 
 
-La tarjeta de desarrollo cuenta con capacidades de E/S versÃ¡tiles en esta ocasiÃ³n control de tiras de LED RGB programables individualmente conocidas como Neopixels. Hemos adaptado el cÃ³digo original de [Stefan Wagner](https://github.com/wagiminator) con el objetivo de lograr una comunicaciÃ³n eficiente y fluida en el chip ch552.
+La tarjeta de desarrollo cuenta con capacidades de E/S versátiles en esta ocasión control de tiras de LED RGB programables individualmente conocidas como Neopixels. Hemos adaptado el código original de [Stefan Wagner](https://github.com/wagiminator) con el objetivo de lograr una comunicación eficiente y fluida en el chip ch552.
 
 Los Neopixels utilizan el protocolo WS2812, que implica enviar una serie de bits que representan los valores de color para cada LED en la cadena. Se debe generar la secuencia de bits de acuerdo con las especificaciones del protocolo.
 
-AquÃ­ hay una guÃ­a general sobre cÃ³mo podrÃ­as conectar el chip CH552 a las tiras de Neopixels:
+Aquí hay una guía general sobre cómo podrías conectar el chip CH552 a las tiras de Neopixels:
 
   <p align="center">
     <img src="/docs/11-comunicacion_neopixels/images/neopixel.png" alt="neopixel">
@@ -22,12 +22,12 @@ AquÃ­ hay una guÃ­a general sobre cÃ³mo podrÃ­as conectar el chip CH552 
 
 ### Uso por Entorno
 
-Puedes acceder al cÃ³digo de ejemplo utilizando la siguiente ruta:
+Puedes acceder al código de ejemplo utilizando la siguiente ruta:
 ```arduino
   File -> Examples -> Unit_SketchLab_Advance -> WS2812.ino
 ```
 
-### Uso por Descarga del CÃ³digo
+### Uso por Descarga del Código
 Para probar el ejemplo, es necesario seguir los siguientes pasos:
 
 - Descarga el archivo:
@@ -46,7 +46,7 @@ Para probar el ejemplo, es necesario seguir los siguientes pasos:
 
 ```c
    - Reloj: 16 MHz.
-   - MÃ©todo de carga: USB.
+   - Método de carga: USB.
    - Ajuste de carga a: "USER CODE w/ 266B USB ram".
 ```
 
@@ -57,20 +57,20 @@ Para probar el ejemplo, es necesario seguir los siguientes pasos:
 ## Compilar y correr un programa
 ---
 
-Carga un programa ingresando al modo de <strong>BOOT</strong> (cargador de arranque). Desconecte el cable USB, presione el botÃ³n <strong>BOOT</strong> en la tarjeta de desarrollo y luego vuelve a conectar a la PC.
+Carga un programa ingresando al modo de <strong>BOOT</strong> (cargador de arranque). Desconecte el cable USB, presione el botón <strong>BOOT</strong> en la tarjeta de desarrollo y luego vuelve a conectar a la PC.
 
 <img src="/docs/3-compilador_mcs51/images/pc_ch.png" alt="Imagen de ch552">
 
-Presione cargar cÃ³digo y espere hasta que muestre el mensaje Reset `ok`.
+Presione cargar código y espere hasta que muestre el mensaje Reset `ok`.
 
 <p align="center">
     <img src="/docs/3-compilador_mcs51/images/ruin.png" alt="buttons_leds">
 </p>
 
 
-**Conexiones fÃ­sicas:** Conecta la salida de datos del Neopixel a un pin de salida del chip CH552 para este ejemplo usaremos el PIN P33. 
+**Conexiones físicas:** Conecta la salida de datos del Neopixel a un pin de salida del chip CH552 para este ejemplo usaremos el PIN P33. 
 
-**Fuente de AlimentaciÃ³n:** AsegÃºrate de tener una fuente de alimentaciÃ³n adecuada para los Neopixels. Pueden requerir mÃ¡s corriente de la que el chip CH552 puede proporcionar directamente, regularmente un led WS2812 a su mÃ¡ximo brillo puede llegar a consumir hasta 60 mA.
+**Fuente de Alimentación:** Asegúrate de tener una fuente de alimentación adecuada para los Neopixels. Pueden requerir más corriente de la que el chip CH552 puede proporcionar directamente, regularmente un led WS2812 a su máximo brillo puede llegar a consumir hasta 60 mA.
 
 
 ## Resultado
@@ -80,7 +80,7 @@ Presione cargar cÃ³digo y espere hasta que muestre el mensaje Reset `ok`.
   <img src="/docs/11-comunicacion_neopixels/images/NEO.gif" alt="GIF">
 </div>
 
-Puedes cambiar la configuraciÃ³n de velocidad y nÃºmero Neopixels, asÃ­ como nivel de iluminaciÃ³n.
+Puedes cambiar la configuración de velocidad y número Neopixels, así como nivel de iluminación.
 
 ```c
 
@@ -92,12 +92,12 @@ Puedes cambiar la configuraciÃ³n de velocidad y nÃºmero Neopixels, asÃ­ co
 ```
 
 
-Para completar la carga del cÃ³digo, presiona el botÃ³n de boot mientras se conecta vÃ­a USB.
+Para completar la carga del código, presiona el botón de boot mientras se conecta vía USB.
 
 <div style="text-align: right">
     <h1><a href="/docs/12-comunicacion_serial/">Siguiente</a></h>
 </div>
 
 
-âŒ¨ï¸ con â¤ï¸ por [UNIT-Electronics](https://github.com/UNIT-Electronics) ðŸ˜Š
+⌨️ con ❤️ por [UNIT-Electronics](https://github.com/UNIT-Electronics) 😊
  

@@ -1,21 +1,21 @@
-﻿---
-title: 12. ComunicaciÃ³n serial
+---
+title: 12. Comunicación serial
 type: docs
 weight: 12
 BookToC: false
 ---
-# ComunicaciÃ³n serial
+# Comunicación serial
 
-El microcontrolador CH552 ofrece una amplia gama de capacidades y aplicaciones, y una de sus caracterÃ­sticas destacadas es la capacidad de comunicaciÃ³n USB. Esto te permite crear dispositivos que pueden ser controlados y monitoreados desde tu computadora, lo que es esencial en proyectos de desarrollo, prototipado y automatizaciÃ³n.
+El microcontrolador CH552 ofrece una amplia gama de capacidades y aplicaciones, y una de sus características destacadas es la capacidad de comunicación USB. Esto te permite crear dispositivos que pueden ser controlados y monitoreados desde tu computadora, lo que es esencial en proyectos de desarrollo, prototipado y automatización.
 
-**En esta secciÃ³n se detalla la configuraciÃ³n paso a paso para establecer la conexiÃ³n USB a TTL con el CH552**
+**En esta sección se detalla la configuración paso a paso para establecer la conexión USB a TTL con el CH552**
 
 
 <p align="center">
     <img src="/docs/12-comunicacion_serial/images/conexion2.png" alt="conexion_Serial1">
 </p>
 
-### VerificaciÃ³n de cÃ³digo
+### Verificación de código
 
 Abre el ejemplo **USBSerilalAdaptor.ino** desde   `File -> Examples -> Unit_SketchLab -> USBSerilalAdaptor.ino`
 
@@ -63,9 +63,9 @@ Para poder cargar el archivo, configura el entorno con las siguientes especifica
 ```C
 Reloj: 16 Mhz.
 
-MÃ©todo de carga: USB.
+Método de carga: USB.
 
-Ajuste de carga a:Â  "Default CDC".
+Ajuste de carga a:  "Default CDC".
 ```
 
 
@@ -74,15 +74,15 @@ Ajuste de carga a:Â  "Default CDC".
 </p>
 
 
-Carga un programa ingresando al modo de <strong>BOOT</strong> (cargador de arranque). Desconecte el cable USB, presione el botÃ³n <strong>BOOT</strong> en la tarjeta de desarrollo y luego vuelve a conectar a la PC.
+Carga un programa ingresando al modo de <strong>BOOT</strong> (cargador de arranque). Desconecte el cable USB, presione el botón <strong>BOOT</strong> en la tarjeta de desarrollo y luego vuelve a conectar a la PC.
 
 <img src="/docs/3-compilador_mcs51/images/pc_ch.png" alt="Imagen de ch552">
 
-## ComunicaciÃ³n uno a uno: Explorando la ComunicaciÃ³n entre Dispositivos Seriales
+## Comunicación uno a uno: Explorando la Comunicación entre Dispositivos Seriales
 
-En el contexto de la comunicaciÃ³n uno a uno entre dispositivos seriales, se presenta un ejemplo ilustrativo que utiliza el CH552 en combinaciÃ³n con un convertidor USB TTL. Este enfoque resulta especialmente Ãºtil en situaciones donde no se disponga de otros dispositivos USB seriales para facilitar la comunicaciÃ³n, esta soluciÃ³n adquiere un valor significativo. Permite que dos dispositivos se comuniquen entre sÃ­ sin depender de recursos externos, facilitando el intercambio de informaciÃ³n y datos de manera eficiente.
+En el contexto de la comunicación uno a uno entre dispositivos seriales, se presenta un ejemplo ilustrativo que utiliza el CH552 en combinación con un convertidor USB TTL. Este enfoque resulta especialmente útil en situaciones donde no se disponga de otros dispositivos USB seriales para facilitar la comunicación, esta solución adquiere un valor significativo. Permite que dos dispositivos se comuniquen entre sí sin depender de recursos externos, facilitando el intercambio de información y datos de manera eficiente.
 
-Por ello se propone el uso de una interfaz de comunicaciÃ³n para la verificaciÃ³n del funcionamiento, un chat a partir de la comunicaciÃ³n serial.
+Por ello se propone el uso de una interfaz de comunicación para la verificación del funcionamiento, un chat a partir de la comunicación serial.
 
 
 
@@ -120,15 +120,15 @@ Por ello se propone el uso de una interfaz de comunicaciÃ³n para la verificaci
     </a>
 </div> -->
 
-Antes de adentrarse en la comunicaciÃ³n serial, es necesario configurar el entorno. Para ello, sigue los siguientes pasos:
+Antes de adentrarse en la comunicación serial, es necesario configurar el entorno. Para ello, sigue los siguientes pasos:
 
-1. **Instalar [Python](https://www.python.org/):** Verifica la instalaciÃ³n en una consola o shell con el siguiente comando:
+1. **Instalar [Python](https://www.python.org/):** Verifica la instalación en una consola o shell con el siguiente comando:
    
     ```bash
     python --version
     ```
 
-2. **Instalar el paquete de pruebas:** Este paquete contiene una interfaz para la comunicaciÃ³n serial. InstÃ¡lalo con:
+2. **Instalar el paquete de pruebas:** Este paquete contiene una interfaz para la comunicación serial. Instálalo con:
 
     ```bash 
     pip install chatos 
@@ -155,14 +155,14 @@ Antes de adentrarse en la comunicaciÃ³n serial, es necesario configurar el ent
 
 
 
-**Nota:** Para usar otro "Chat" en el mismo dispositivo para pruebas, abre una nueva consola y escribe el comando `python -m chatos`. Esto abrirÃ¡ una nueva interfaz que permitirÃ¡ comunicar dos dispositivos COM.
+**Nota:** Para usar otro "Chat" en el mismo dispositivo para pruebas, abre una nueva consola y escribe el comando `python -m chatos`. Esto abrirá una nueva interfaz que permitirá comunicar dos dispositivos COM.
 
 
   <div style="text-align: center;">
       <img src="/docs/12-comunicacion_serial/images/test_code.png" alt="chatos">
   </div>
 
-Si bien no solo se puede usar como un convertidor USB a TTL, sino tambiÃ©n puede introducir ciertas secciones de cÃ³digo para realizar ciertas funciones independientes.
+Si bien no solo se puede usar como un convertidor USB a TTL, sino también puede introducir ciertas secciones de código para realizar ciertas funciones independientes.
 
 Abre el ejemplo **USBSerilalAdaptor2.ino** desde   `File -> Examples -> Unit_SketchLab_Advance -> USBSerilalAdaptor2.ino`
 
@@ -170,20 +170,20 @@ Abre el ejemplo **USBSerilalAdaptor2.ino** desde   `File -> Examples -> Unit_Ske
 ## Agregando funcionalidad al CH552 adaptador
  
 
-El convertidor USB a TTL CH552, permite elaborar rutinas internas como secuencia de encendido de led o respuesta de algÃºn parÃ¡metro se desee visualizar, ejecutar internamente del microcontrolador.
+El convertidor USB a TTL CH552, permite elaborar rutinas internas como secuencia de encendido de led o respuesta de algún parámetro se desee visualizar, ejecutar internamente del microcontrolador.
 
 
-El cÃ³digo de ch552-USB-TTL permite establecer las rutinas personalizadas realizando las adecuaciones necesarias al cÃ³digo ejemplo dado por el desarrollador.
+El código de ch552-USB-TTL permite establecer las rutinas personalizadas realizando las adecuaciones necesarias al código ejemplo dado por el desarrollador.
 
 
-[InstalaciÃ³n de PUTTY](https://putty.org/)
+[Instalación de PUTTY](https://putty.org/)
 
   <div style="text-align: center;">
       <img src="/docs/12-comunicacion_serial/images/test_code2.png" alt="chatos">
   </div>
 
 
-> **Nota:** Ten en cuenta que este cÃ³digo es un ejemplo y puede que necesites ajustarlo segÃºn tu configuraciÃ³n especÃ­fica y tus necesidades.
+> **Nota:** Ten en cuenta que este código es un ejemplo y puede que necesites ajustarlo según tu configuración específica y tus necesidades.
 
 
 
@@ -192,4 +192,4 @@ El cÃ³digo de ch552-USB-TTL permite establecer las rutinas personalizadas real
 
 
 ---
-âŒ¨ï¸ con â¤ï¸ por [UNIT-Electronics](https://github.com/UNIT-Electronics) ðŸ˜Š
+⌨️ con ❤️ por [UNIT-Electronics](https://github.com/UNIT-Electronics) 😊
