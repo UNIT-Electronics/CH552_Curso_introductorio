@@ -1,21 +1,21 @@
----
-title: 10. Comunicación I2C
+﻿---
+title: 10. ComunicaciÃ³n I2C
 type: docs
 weight: 10
 BookToC: false
 ---
 
-# Comunicación I2C
+# ComunicaciÃ³n I2C
 ---
-En la intersección de la innovación tecnológica y la creatividad visual, las pantallas OLED desempeñan un papel central. Este repositorio se enfoca en el proceso de configuración de un modelo específico: la pantalla OLED SSD1306. Hemos adaptado el código original de [Stefan Wagner](https://github.com/wagiminator) con el objetivo de lograr una comunicación eficiente y fluida en el chip ch552. Para lograrlo, utilizamos el protocolo I2C y el entorno de programación Arduino IDE.
+En la intersecciÃ³n de la innovaciÃ³n tecnolÃ³gica y la creatividad visual, las pantallas OLED desempeÃ±an un papel central. Este repositorio se enfoca en el proceso de configuraciÃ³n de un modelo especÃ­fico: la pantalla OLED SSD1306. Hemos adaptado el cÃ³digo original de [Stefan Wagner](https://github.com/wagiminator) con el objetivo de lograr una comunicaciÃ³n eficiente y fluida en el chip ch552. Para lograrlo, utilizamos el protocolo I2C y el entorno de programaciÃ³n Arduino IDE.
 
 
 
 <p align="center">
-    <img src="/docs/10-Comunicacion_I2C/images/oled.png" alt="frecuecy">
+    <img src="/docs/10-comunicacion_i2c/images/oled.png" alt="frecuecy">
 </p>
 
-Exploraremos los pasos fundamentales para realizar esta configuración, haciendo especial hincapié en la obtención del archivo `SSD1306`, la precisa adaptación de los parámetros de datos en armonía con el entorno ch55xduino y la consecuente capacidad de presentar mensajes de manera efectiva en la pantalla. Acompáñanos en esta travesía de integración tecnológica y expresión visual.
+Exploraremos los pasos fundamentales para realizar esta configuraciÃ³n, haciendo especial hincapiÃ© en la obtenciÃ³n del archivo `SSD1306`, la precisa adaptaciÃ³n de los parÃ¡metros de datos en armonÃ­a con el entorno ch55xduino y la consecuente capacidad de presentar mensajes de manera efectiva en la pantalla. AcompÃ¡Ã±anos en esta travesÃ­a de integraciÃ³n tecnolÃ³gica y expresiÃ³n visual.
 
 
 
@@ -24,18 +24,18 @@ Exploraremos los pasos fundamentales para realizar esta configuración, haciendo
 
 ### Uso por Entorno
 
-Puedes acceder al código de ejemplo utilizando la siguiente ruta:
+Puedes acceder al cÃ³digo de ejemplo utilizando la siguiente ruta:
 ```arduino
   File -> Examples -> Unit_SketchLab_Advance -> SSD1306.ino
 ```
 
-### Uso por Descarga del Código
+### Uso por Descarga del CÃ³digo
 
 
 - Descarga el archivo:
 
 <div style="text-align: center;">
-    <a href="/docs/10-Comunicacion_I2C/code/SSD1306.zip" download="SSD1306.zip">
+    <a href="/docs/10-comunicacion_i2c/code/SSD1306.zip" download="SSD1306.zip">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
           SSD1306.zip
         </button>
@@ -47,25 +47,25 @@ Puedes acceder al código de ejemplo utilizando la siguiente ruta:
 ### Configura el entorno con las siguientes especificaciones:
 ```c
    - Reloj: 16 MHz.
-   - Método de carga: USB.
+   - MÃ©todo de carga: USB.
    - Ajuste de carga a: "USER CODE w/ 266B USB ram".
 
 ```
 <div style="text-align: center;">
-  <img src="/docs/9-Controlador_pwm/images/pwm1.png" alt="PWM" />
+  <img src="/docs/9-controlador_pwm/images/pwm1.png" alt="PWM" />
 </div>
 
 ## Compilar y correr un programa
 ---
 
-Carga un programa ingresando al modo de <strong>BOOT</strong> (cargador de arranque). Desconecte el cable USB, presione el botón <strong>BOOT</strong> en la tarjeta de desarrollo y luego vuelve a conectar a la PC.
+Carga un programa ingresando al modo de <strong>BOOT</strong> (cargador de arranque). Desconecte el cable USB, presione el botÃ³n <strong>BOOT</strong> en la tarjeta de desarrollo y luego vuelve a conectar a la PC.
 
-<img src="/docs/3-Compilador_mcs51/images/pc_ch.png" alt="Imagen de ch552">
+<img src="/docs/3-compilador_mcs51/images/pc_ch.png" alt="Imagen de ch552">
 
 Presione cargar codigo y espere hasta que muestre el mensaje Reset OK.
 
 <p align="center">
-    <img src="/docs/3-Compilador_mcs51/images/ruin.png" alt="buttons_leds">
+    <img src="/docs/3-compilador_mcs51/images/ruin.png" alt="buttons_leds">
 </p>
 
 
@@ -81,16 +81,16 @@ Para configurar nuestra pantalla OLED, hacemos uso del Arduino IDE para cargar l
 ```
 
 
-El PIN BUZZER o de LED nos permite saber que la transmisión de los datos se ejecutó correctamente. Como se menciona no es necesaria su conexión a menos que se desee ocupar como alerta.
+El PIN BUZZER o de LED nos permite saber que la transmisiÃ³n de los datos se ejecutÃ³ correctamente. Como se menciona no es necesaria su conexiÃ³n a menos que se desee ocupar como alerta.
 
  
 
 
 ```js
-// Conexión CH552 a LED:
+// ConexiÃ³n CH552 a LED:
 // -------                                 CH552
 //                                       +--\/--+
-//     OLED (SDA) ---------------- P32  1|°     |16  V33 -------------
+//     OLED (SDA) ---------------- P32  1|Â°     |16  V33 -------------
 //                ---------------- P14  2|      |15  Vcc -------------
 //     OLED (SCL) ---------------- P15  3|      |14  GND -------------
 //                ---------------- P16  4|      |13  P37 UDM --- USB D-
@@ -118,7 +118,7 @@ El PIN BUZZER o de LED nos permite saber que la transmisión de los datos se eje
 ## Resultado
 ---
 
-![](/docs/10-Comunicacion_I2C/images/oled2.png)
+![](/docs/10-comunicacion_i2c/images/oled2.png)
 
 
 <div style="text-align: right">
@@ -128,4 +128,4 @@ El PIN BUZZER o de LED nos permite saber que la transmisión de los datos se eje
 
 
 ---
-⌨️ con ❤️ por [UNIT-Electronics](https://github.com/UNIT-Electronics) 😊
+âŒ¨ï¸ con â¤ï¸ por [UNIT-Electronics](https://github.com/UNIT-Electronics) ðŸ˜Š
