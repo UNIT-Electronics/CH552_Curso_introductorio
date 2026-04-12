@@ -9,6 +9,10 @@
 /public/
 /resources/_gen/
 
+# VS Code local settings
+/.vscode/
+/.vscode-server/
+
 # executable may be added to repository
 hugo.exe
 hugo.darwin
